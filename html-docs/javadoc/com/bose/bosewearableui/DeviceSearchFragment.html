@@ -1,0 +1,729 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>DeviceSearchFragment (BoseWearable Android)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript" src="../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="DeviceSearchFragment (BoseWearable Android)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":41,"i1":41,"i2":42,"i3":42,"i4":42,"i5":42,"i6":42,"i7":42,"i8":42,"i9":42,"i10":42,"i11":42};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/bose/bosewearableui/DevicePickerFragment.html" title="class in com.bose.bosewearableui"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/bose/bosewearableui/FirmwareUpgradeFragment.html" title="class in com.bose.bosewearableui"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/bosewearableui/DeviceSearchFragment.html" target="_top">Frames</a></li>
+<li><a href="DeviceSearchFragment.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.androidx.fragment.app.Fragment">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.bose.bosewearableui</div>
+<h2 title="Class DeviceSearchFragment" class="title">Class DeviceSearchFragment</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>androidx.fragment.app.Fragment</li>
+<li>
+<ul class="inheritance">
+<li>androidx.fragment.app.DialogFragment</li>
+<li>
+<ul class="inheritance">
+<li>com.bose.bosewearableui.DeviceSearchFragment</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="https://developer.android.com/reference/android/content/ComponentCallbacks.html" target="_top" title="class or interface in android.content">ComponentCallbacks</a>, <a href="https://developer.android.com/reference/android/content/DialogInterface.OnCancelListener.html" target="_top" title="class or interface in android.content">DialogInterface.OnCancelListener</a>, <a href="https://developer.android.com/reference/android/content/DialogInterface.OnDismissListener.html" target="_top" title="class or interface in android.content">DialogInterface.OnDismissListener</a>, <a href="https://developer.android.com/reference/android/view/View.OnCreateContextMenuListener.html" target="_top" title="class or interface in android.view">View.OnCreateContextMenuListener</a>, androidx.lifecycle.LifecycleOwner, androidx.lifecycle.ViewModelStoreOwner, com.bose.bosewearableui.DeviceListAdapter.Listener</dd>
+</dl>
+<hr>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../com/bose/bosewearableui/DeviceConnectorActivity.html" title="class in com.bose.bosewearableui"><code>DeviceConnectorActivity</code></a> instead</span></div>
+</div>
+<br>
+<pre><a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Deprecated.html" target="_top" title="class or interface in java.lang">@Deprecated</a>
+public class <span class="typeNameLabel">DeviceSearchFragment</span>
+extends androidx.fragment.app.DialogFragment
+implements com.bose.bosewearableui.DeviceListAdapter.Listener</pre>
+<div class="block">Device discovery dialog fragment.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.androidx.fragment.app.Fragment">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;androidx.fragment.app.Fragment</h3>
+<code>androidx.fragment.app.Fragment.InstantiationException, androidx.fragment.app.Fragment.SavedState</code></li>
+</ul>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#ARG_AUTO_CONNECT_ADDRESS">ARG_AUTO_CONNECT_ADDRESS</a></span></code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Automatically connect to a device with the specified address if it is found in
+ <a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#ARG_AUTO_CONNECT_TIMEOUT"><code>ARG_AUTO_CONNECT_TIMEOUT</code></a> seconds.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#ARG_AUTO_CONNECT_TIMEOUT">ARG_AUTO_CONNECT_TIMEOUT</a></span></code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Timeout (in seconds) to use to automatically connect to <a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#ARG_AUTO_CONNECT_ADDRESS"><code>ARG_AUTO_CONNECT_ADDRESS</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#ARG_TITLE">ARG_TITLE</a></span></code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Dialog title</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#EXTRA_DEVICE_ADDRESS">EXTRA_DEVICE_ADDRESS</a></span></code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Used to report the <code>String</code> value of selected device address.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#EXTRA_ERROR">EXTRA_ERROR</a></span></code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Used to report scan errors using <a href="../../../com/bose/blecore/ScanError.html" title="enum in com.bose.blecore"><code>ScanError</code></a> class.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#RESULT_SCAN_ERROR">RESULT_SCAN_ERROR</a></span></code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Scan result code to notify a scan error.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.androidx.fragment.app.DialogFragment">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;androidx.fragment.app.DialogFragment</h3>
+<code>STYLE_NO_FRAME, STYLE_NO_INPUT, STYLE_NO_TITLE, STYLE_NORMAL</code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#DeviceSearchFragment--">DeviceSearchFragment</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html" title="class in com.bose.bosewearableui">DeviceSearchFragment</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#create-java.lang.String-">create</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a>&nbsp;title)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html" title="class in com.bose.bosewearableui">DeviceSearchFragment</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#create-java.lang.String-java.lang.String-int-">create</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a>&nbsp;title,
+      <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a>&nbsp;autoConnectAddress,
+      int&nbsp;autoConnectTimeout)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onActivityResult-int-int-android.content.Intent-">onActivityResult</a></span>(int&nbsp;requestCode,
+                int&nbsp;resultCode,
+                <a href="https://developer.android.com/reference/android/content/Intent.html" target="_top" title="class or interface in android.content">Intent</a>&nbsp;data)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onCancel-android.content.DialogInterface-">onCancel</a></span>(<a href="https://developer.android.com/reference/android/content/DialogInterface.html" target="_top" title="class or interface in android.content">DialogInterface</a>&nbsp;dialog)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onCreate-android.os.Bundle-">onCreate</a></span>(<a href="https://developer.android.com/reference/android/os/Bundle.html" target="_top" title="class or interface in android.os">Bundle</a>&nbsp;savedInstanceState)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://developer.android.com/reference/android/view/View.html" target="_top" title="class or interface in android.view">View</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onCreateView-android.view.LayoutInflater-android.view.ViewGroup-android.os.Bundle-">onCreateView</a></span>(<a href="https://developer.android.com/reference/android/view/LayoutInflater.html" target="_top" title="class or interface in android.view">LayoutInflater</a>&nbsp;inflater,
+            <a href="https://developer.android.com/reference/android/view/ViewGroup.html" target="_top" title="class or interface in android.view">ViewGroup</a>&nbsp;container,
+            <a href="https://developer.android.com/reference/android/os/Bundle.html" target="_top" title="class or interface in android.os">Bundle</a>&nbsp;savedInstanceState)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onDeviceSelected-com.bose.blecore.DiscoveredDevice-">onDeviceSelected</a></span>(<a href="../../../com/bose/blecore/DiscoveredDevice.html" title="class in com.bose.blecore">DiscoveredDevice</a>&nbsp;device)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onPause--">onPause</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onRequestPermissionsResult-int-java.lang.String:A-int:A-">onRequestPermissionsResult</a></span>(int&nbsp;requestCode,
+                          <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a>[]&nbsp;permissions,
+                          int[]&nbsp;grantResults)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onResume--">onResume</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onViewCreated-android.view.View-android.os.Bundle-">onViewCreated</a></span>(<a href="https://developer.android.com/reference/android/view/View.html" target="_top" title="class or interface in android.view">View</a>&nbsp;view,
+             <a href="https://developer.android.com/reference/android/os/Bundle.html" target="_top" title="class or interface in android.os">Bundle</a>&nbsp;savedInstanceState)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#setStyle--">setStyle</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">This method is called by <a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onCreate-android.os.Bundle-"><code>onCreate(Bundle)</code></a> to style the Dialog.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.androidx.fragment.app.DialogFragment">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;androidx.fragment.app.DialogFragment</h3>
+<code>dismiss, dismissAllowingStateLoss, getDialog, getShowsDialog, getTheme, isCancelable, onActivityCreated, onAttach, onCreateDialog, onDestroyView, onDetach, onDismiss, onGetLayoutInflater, onSaveInstanceState, onStart, onStop, setCancelable, setShowsDialog, setStyle, setupDialog, show, show, showNow</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.androidx.fragment.app.Fragment">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;androidx.fragment.app.Fragment</h3>
+<code>dump, equals, getActivity, getAllowEnterTransitionOverlap, getAllowReturnTransitionOverlap, getArguments, getChildFragmentManager, getContext, getEnterTransition, getExitTransition, getFragmentManager, getHost, getId, getLayoutInflater, getLayoutInflater, getLifecycle, getLoaderManager, getParentFragment, getReenterTransition, getResources, getRetainInstance, getReturnTransition, getSharedElementEnterTransition, getSharedElementReturnTransition, getString, getString, getTag, getTargetFragment, getTargetRequestCode, getText, getUserVisibleHint, getView, getViewLifecycleOwner, getViewLifecycleOwnerLiveData, getViewModelStore, hashCode, hasOptionsMenu, instantiate, instantiate, isAdded, isDetached, isHidden, isInLayout, isMenuVisible, isRemoving, isResumed, isStateSaved, isVisible, onAttach, onAttachFragment, onConfigurationChanged, onContextItemSelected, onCreateAnimation, onCreateAnimator, onCreateContextMenu, onCreateOptionsMenu, onDestroy, onDestroyOptionsMenu, onHiddenChanged, onInflate, onInflate, onLowMemory, onMultiWindowModeChanged, onOptionsItemSelected, onOptionsMenuClosed, onPictureInPictureModeChanged, onPrepareOptionsMenu, onViewStateRestored, postponeEnterTransition, registerForContextMenu, requestPermissions, requireActivity, requireContext, requireFragmentManager, requireHost, setAllowEnterTransitionOverlap, setAllowReturnTransitionOverlap, setArguments, setEnterSharedElementCallback, setEnterTransition, setExitSharedElementCallback, setExitTransition, setHasOptionsMenu, setInitialSavedState, setMenuVisibility, setReenterTransition, setRetainInstance, setReturnTransition, setSharedElementEnterTransition, setSharedElementReturnTransition, setTargetFragment, setUserVisibleHint, shouldShowRequestPermissionRationale, startActivity, startActivity, startActivityForResult, startActivityForResult, startIntentSenderForResult, startPostponedEnterTransition, toString, unregisterForContextMenu</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="ARG_TITLE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ARG_TITLE</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a> ARG_TITLE</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Dialog title</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#com.bose.bosewearableui.DeviceSearchFragment.ARG_TITLE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="ARG_AUTO_CONNECT_ADDRESS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ARG_AUTO_CONNECT_ADDRESS</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a> ARG_AUTO_CONNECT_ADDRESS</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Automatically connect to a device with the specified address if it is found in
+ <a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#ARG_AUTO_CONNECT_TIMEOUT"><code>ARG_AUTO_CONNECT_TIMEOUT</code></a> seconds.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#com.bose.bosewearableui.DeviceSearchFragment.ARG_AUTO_CONNECT_ADDRESS">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="ARG_AUTO_CONNECT_TIMEOUT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ARG_AUTO_CONNECT_TIMEOUT</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a> ARG_AUTO_CONNECT_TIMEOUT</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Timeout (in seconds) to use to automatically connect to <a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#ARG_AUTO_CONNECT_ADDRESS"><code>ARG_AUTO_CONNECT_ADDRESS</code></a>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#com.bose.bosewearableui.DeviceSearchFragment.ARG_AUTO_CONNECT_TIMEOUT">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="RESULT_SCAN_ERROR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RESULT_SCAN_ERROR</h4>
+<pre>public static final&nbsp;int RESULT_SCAN_ERROR</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Scan result code to notify a scan error.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#com.bose.bosewearableui.DeviceSearchFragment.RESULT_SCAN_ERROR">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="EXTRA_DEVICE_ADDRESS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EXTRA_DEVICE_ADDRESS</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a> EXTRA_DEVICE_ADDRESS</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Used to report the <code>String</code> value of selected device address.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#com.bose.bosewearableui.DeviceSearchFragment.EXTRA_DEVICE_ADDRESS">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="EXTRA_ERROR">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>EXTRA_ERROR</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a> EXTRA_ERROR</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Used to report scan errors using <a href="../../../com/bose/blecore/ScanError.html" title="enum in com.bose.blecore"><code>ScanError</code></a> class.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#com.bose.bosewearableui.DeviceSearchFragment.EXTRA_ERROR">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="DeviceSearchFragment--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DeviceSearchFragment</h4>
+<pre>public&nbsp;DeviceSearchFragment()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="onCreate-android.os.Bundle-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCreate</h4>
+<pre>public&nbsp;void&nbsp;onCreate(<a href="https://developer.android.com/reference/android/os/Bundle.html" target="_top" title="class or interface in android.os">Bundle</a>&nbsp;savedInstanceState)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>onCreate</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.DialogFragment</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onCreateView-android.view.LayoutInflater-android.view.ViewGroup-android.os.Bundle-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCreateView</h4>
+<pre>public&nbsp;<a href="https://developer.android.com/reference/android/view/View.html" target="_top" title="class or interface in android.view">View</a>&nbsp;onCreateView(@NonNull
+                         <a href="https://developer.android.com/reference/android/view/LayoutInflater.html" target="_top" title="class or interface in android.view">LayoutInflater</a>&nbsp;inflater,
+                         <a href="https://developer.android.com/reference/android/view/ViewGroup.html" target="_top" title="class or interface in android.view">ViewGroup</a>&nbsp;container,
+                         <a href="https://developer.android.com/reference/android/os/Bundle.html" target="_top" title="class or interface in android.os">Bundle</a>&nbsp;savedInstanceState)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>onCreateView</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onViewCreated-android.view.View-android.os.Bundle-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onViewCreated</h4>
+<pre>public&nbsp;void&nbsp;onViewCreated(@NonNull
+                          <a href="https://developer.android.com/reference/android/view/View.html" target="_top" title="class or interface in android.view">View</a>&nbsp;view,
+                          @Nullable
+                          <a href="https://developer.android.com/reference/android/os/Bundle.html" target="_top" title="class or interface in android.os">Bundle</a>&nbsp;savedInstanceState)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>onViewCreated</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onResume--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onResume</h4>
+<pre>public&nbsp;void&nbsp;onResume()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>onResume</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onPause--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onPause</h4>
+<pre>public&nbsp;void&nbsp;onPause()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>onPause</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onActivityResult-int-int-android.content.Intent-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onActivityResult</h4>
+<pre>public&nbsp;void&nbsp;onActivityResult(int&nbsp;requestCode,
+                             int&nbsp;resultCode,
+                             <a href="https://developer.android.com/reference/android/content/Intent.html" target="_top" title="class or interface in android.content">Intent</a>&nbsp;data)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>onActivityResult</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onRequestPermissionsResult-int-java.lang.String:A-int:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onRequestPermissionsResult</h4>
+<pre>public&nbsp;void&nbsp;onRequestPermissionsResult(int&nbsp;requestCode,
+                                       @NonNull
+                                       <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a>[]&nbsp;permissions,
+                                       @NonNull
+                                       int[]&nbsp;grantResults)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>onRequestPermissionsResult</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.Fragment</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onDeviceSelected-com.bose.blecore.DiscoveredDevice-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onDeviceSelected</h4>
+<pre>public&nbsp;void&nbsp;onDeviceSelected(@NonNull
+                             <a href="../../../com/bose/blecore/DiscoveredDevice.html" title="class in com.bose.blecore">DiscoveredDevice</a>&nbsp;device)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>onDeviceSelected</code>&nbsp;in interface&nbsp;<code>com.bose.bosewearableui.DeviceListAdapter.Listener</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onCancel-android.content.DialogInterface-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCancel</h4>
+<pre>public&nbsp;void&nbsp;onCancel(<a href="https://developer.android.com/reference/android/content/DialogInterface.html" target="_top" title="class or interface in android.content">DialogInterface</a>&nbsp;dialog)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="https://developer.android.com/reference/android/content/DialogInterface.OnCancelListener.html?is-external=true#onCancel-android.content.DialogInterface-" title="class or interface in android.content">onCancel</a></code>&nbsp;in interface&nbsp;<code><a href="https://developer.android.com/reference/android/content/DialogInterface.OnCancelListener.html" target="_top" title="class or interface in android.content">DialogInterface.OnCancelListener</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>onCancel</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.DialogFragment</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setStyle--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setStyle</h4>
+<pre>protected&nbsp;void&nbsp;setStyle()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">This method is called by <a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html#onCreate-android.os.Bundle-"><code>onCreate(Bundle)</code></a> to style the Dialog.</div>
+</li>
+</ul>
+<a name="create-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static&nbsp;<a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html" title="class in com.bose.bosewearableui">DeviceSearchFragment</a>&nbsp;create(@Nullable
+                                          <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a>&nbsp;title)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="create-java.lang.String-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static&nbsp;<a href="../../../com/bose/bosewearableui/DeviceSearchFragment.html" title="class in com.bose.bosewearableui">DeviceSearchFragment</a>&nbsp;create(@Nullable
+                                          <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a>&nbsp;title,
+                                          @Nullable
+                                          <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html" target="_top" title="class or interface in java.lang">String</a>&nbsp;autoConnectAddress,
+                                          int&nbsp;autoConnectTimeout)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/bose/bosewearableui/DevicePickerFragment.html" title="class in com.bose.bosewearableui"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/bose/bosewearableui/FirmwareUpgradeFragment.html" title="class in com.bose.bosewearableui"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/bosewearableui/DeviceSearchFragment.html" target="_top">Frames</a></li>
+<li><a href="DeviceSearchFragment.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.androidx.fragment.app.Fragment">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

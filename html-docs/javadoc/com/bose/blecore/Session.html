@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>Session (BoseWearable Android)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript" src="../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Session (BoseWearable Android)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/bose/blecore/ServiceIdentification.html" title="interface in com.bose.blecore"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/bose/blecore/SessionBondingDelegate.html" title="interface in com.bose.blecore"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/blecore/Session.html" target="_top">Frames</a></li>
+<li><a href="Session.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.bose.blecore</div>
+<h2 title="Interface Session" class="title">Interface Session</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../com/bose/wearable/simulated/SimulatedSession.html" title="class in com.bose.wearable.simulated">SimulatedSession</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="typeNameLabel">Session</span></pre>
+<div class="block"><p>
+ A session represents the communication between this device and a remote <a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html" target="_top" title="class or interface in android.bluetooth"><code>BluetoothDevice</code></a>.
+ It must be opened (via the <a href="../../../com/bose/blecore/Session.html#open--"><code>open()</code></a> method) to initiate a connection. It must be closed
+ (via the <a href="../../../com/bose/blecore/Session.html#close--"><code>close()</code></a> method) to tear down the connection. It must be disposed (via the
+ `dispose()` method) to remove it from the <a href="../../../com/bose/blecore/BluetoothManager.html" title="class in com.bose.blecore"><code>BluetoothManager</code></a> that created it, allowing it
+ to be deallocated.
+ </p>
+
+ <p>
+ Calling <a href="../../../com/bose/blecore/Session.html#open--"><code>open()</code></a> on a session begins the connection process. This is a multi-step process
+ that ends successfully with an instantiated <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a> object and an open communication
+ channel. The process is as follows:
+ </p>
+
+ <p> - <a href="../../../com/bose/blecore/Session.html#open--"><code>open()</code></a> calls <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html?is-external=true#connect--" title="class or interface in android.bluetooth"><code>BluetoothGatt.connect()</code></a> for the given device.</p>
+ <p> - If the connection was successful (the <a href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html?is-external=true#STATE_CONNECTED" title="class or interface in android.bluetooth"><code>BluetoothProfile.STATE_CONNECTED</code></a> status is
+  received indicating a successful connection), we begin discovering services on the peripheral
+  (via <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html?is-external=true#discoverServices--" title="class or interface in android.bluetooth"><code>BluetoothGatt.discoverServices()</code></a>). </p>
+ <p> - After services are discovered (the session received a
+  <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback.html?is-external=true#onServicesDiscovered-android.bluetooth.BluetoothGatt-int-" title="class or interface in android.bluetooth"><code>BluetoothGattCallback.onServicesDiscovered(BluetoothGatt, int)</code></a> indicating success),
+  we attempt to instantiate a matching <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a> type by calling
+  <a href="../../../com/bose/blecore/BluetoothManager.html#instantiateDevice-com.bose.blecore.SerializedGatt-android.bluetooth.BluetoothDevice-"><code>BluetoothManager.instantiateDevice(SerializedGatt, BluetoothDevice)</code></a>. </p>
+ <p> - If a matching <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a> type is found and successfully instantiated, the session was
+  successfully opened and the <a href="../../../com/bose/blecore/SessionDelegate.html" title="interface in com.bose.blecore"><code>SessionDelegate</code></a> is notified. </p>
+ <p> - If any of the steps above fail, the <a href="../../../com/bose/blecore/SessionDelegate.html" title="interface in com.bose.blecore"><code>SessionDelegate</code></a> is notified. </p></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../com/bose/blecore/SessionBondingDelegate.html" title="interface in com.bose.blecore">SessionBondingDelegate</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#bondingDelegate--">bondingDelegate</a></span>()</code>
+<div class="block">The currently registered delegate.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#bondingDelegate-com.bose.blecore.SessionBondingDelegate-">bondingDelegate</a></span>(<a href="../../../com/bose/blecore/SessionBondingDelegate.html" title="interface in com.bose.blecore">SessionBondingDelegate</a>&nbsp;delegate)</code>
+<div class="block">The bonding delegate gets notified when a device is required to be put into pairing mode in
+ order to proceed with the connection.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../com/bose/blecore/SessionDelegate.html" title="interface in com.bose.blecore">SessionDelegate</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#callback--">callback</a></span>()</code>
+<div class="block">The currently registered callback.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#callback-com.bose.blecore.SessionDelegate-">callback</a></span>(<a href="../../../com/bose/blecore/SessionDelegate.html" title="interface in com.bose.blecore">SessionDelegate</a>&nbsp;callback)</code>
+<div class="block">The session delegate that receives callbacks indicating connectivity events.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#close--">close</a></span>()</code>
+<div class="block">Closes the session and cancels the connection to the underlying <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore">Device</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#device--">device</a></span>()</code>
+<div class="block">The connected device.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#open--">open</a></span>()</code>
+<div class="block">Opens the session.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#refreshServices--">refreshServices</a></span>()</code>
+<div class="block">Refresh GATT services.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Session.html#requestConnectionPriority-int-">requestConnectionPriority</a></span>(int&nbsp;connectionPriority)</code>
+<div class="block">Request a connection parameter update.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="callback-com.bose.blecore.SessionDelegate-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>callback</h4>
+<pre>void&nbsp;callback(@Nullable
+              <a href="../../../com/bose/blecore/SessionDelegate.html" title="interface in com.bose.blecore">SessionDelegate</a>&nbsp;callback)</pre>
+<div class="block">The session delegate that receives callbacks indicating connectivity events.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>callback</code> - The callback to use (or <code>null</code> to clear it)</dd>
+</dl>
+</li>
+</ul>
+<a name="callback--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>callback</h4>
+<pre>@Nullable
+<a href="../../../com/bose/blecore/SessionDelegate.html" title="interface in com.bose.blecore">SessionDelegate</a>&nbsp;callback()</pre>
+<div class="block">The currently registered callback.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The registered callback (<code>null</code> if no callback is registered)</dd>
+</dl>
+</li>
+</ul>
+<a name="bondingDelegate-com.bose.blecore.SessionBondingDelegate-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bondingDelegate</h4>
+<pre>void&nbsp;bondingDelegate(@Nullable
+                     <a href="../../../com/bose/blecore/SessionBondingDelegate.html" title="interface in com.bose.blecore">SessionBondingDelegate</a>&nbsp;delegate)</pre>
+<div class="block">The bonding delegate gets notified when a device is required to be put into pairing mode in
+ order to proceed with the connection. This is only required if you are implementing a custom
+ connection UI.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>delegate</code> - The delegate tu use (or <code>null</code> to clear it)</dd>
+</dl>
+</li>
+</ul>
+<a name="bondingDelegate--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bondingDelegate</h4>
+<pre>@Nullable
+<a href="../../../com/bose/blecore/SessionBondingDelegate.html" title="interface in com.bose.blecore">SessionBondingDelegate</a>&nbsp;bondingDelegate()</pre>
+<div class="block">The currently registered delegate.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The registered delegate (<code>null</code> if no delegate is registered)</dd>
+</dl>
+</li>
+</ul>
+<a name="open--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>open</h4>
+<pre>void&nbsp;open()</pre>
+<div class="block">Opens the session. Begins the connection process.</div>
+</li>
+</ul>
+<a name="close--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>close</h4>
+<pre>void&nbsp;close()</pre>
+<div class="block">Closes the session and cancels the connection to the underlying <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a>.</div>
+</li>
+</ul>
+<a name="device--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>device</h4>
+<pre>@Nullable
+<a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore">Device</a>&nbsp;device()</pre>
+<div class="block">The connected device.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The device if connected, <code>null</code> otherwise</dd>
+</dl>
+</li>
+</ul>
+<a name="requestConnectionPriority-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestConnectionPriority</h4>
+<pre>void&nbsp;requestConnectionPriority(int&nbsp;connectionPriority)</pre>
+<div class="block">Request a connection parameter update. *Experimental API*
+
+ <p>This function will send a connection parameter update request to the
+ remote device.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>connectionPriority</code> - Request a specific connection priority. Must be one of <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html?is-external=true#CONNECTION_PRIORITY_BALANCED" title="class or interface in android.bluetooth"><code>BluetoothGatt.CONNECTION_PRIORITY_BALANCED</code></a>, <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html?is-external=true#CONNECTION_PRIORITY_HIGH" title="class or interface in android.bluetooth"><code>BluetoothGatt.CONNECTION_PRIORITY_HIGH</code></a>
+ or <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html?is-external=true#CONNECTION_PRIORITY_LOW_POWER" title="class or interface in android.bluetooth"><code>BluetoothGatt.CONNECTION_PRIORITY_LOW_POWER</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a name="refreshServices--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>refreshServices</h4>
+<pre>void&nbsp;refreshServices()</pre>
+<div class="block">Refresh GATT services. Android OS Bluetooth stack caches the list of available services and
+ their characteristics for paired devices. New services or characteristics added (or removed)
+ by the remote Bluetooth device firmware are thus not detected, requiring either (a) to
+ unpair/pair cycle or (b) this method call. *Experimental API*</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/bose/blecore/ServiceIdentification.html" title="interface in com.bose.blecore"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/bose/blecore/SessionBondingDelegate.html" title="interface in com.bose.blecore"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/blecore/Session.html" target="_top">Frames</a></li>
+<li><a href="Session.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

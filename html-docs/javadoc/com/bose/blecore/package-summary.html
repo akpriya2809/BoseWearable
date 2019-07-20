@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>com.bose.blecore (BoseWearable Android)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript" src="../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="com.bose.blecore (BoseWearable Android)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev&nbsp;Package</li>
+<li><a href="../../../com/bose/blecore/deviceinformation/package-summary.html">Next&nbsp;Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/blecore/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;com.bose.blecore</h1>
+<div class="docSummary">
+<div class="block">Low level Bluetooth GATT abstractions</div>
+</div>
+<p>See:&nbsp;<a href="#package.description">Description</a></p>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore">Device</a></td>
+<td class="colLast">
+<div class="block">A connected Device with an open <a href="../../../com/bose/blecore/Session.html" title="interface in com.bose.blecore"><code>Session</code></a> to it.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/DeviceFactory.html" title="interface in com.bose.blecore">DeviceFactory</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/DeviceIdentification.html" title="interface in com.bose.blecore">DeviceIdentification</a></td>
+<td class="colLast">
+<div class="block">The <a href="../../../com/bose/blecore/DeviceIdentification.html" title="interface in com.bose.blecore"><code>DeviceIdentification</code></a> interface provides the information necessary to identify a
+ particular device type based upon its advertised services, its advertisement data, and the
+ services a <a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html" target="_top" title="class or interface in android.bluetooth"><code>BluetoothDevice</code></a> provides.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/ScanListener.html" title="interface in com.bose.blecore">ScanListener</a></td>
+<td class="colLast">
+<div class="block">Listener for reporting Bluetooth scanning results and errors.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/ServiceIdentification.html" title="interface in com.bose.blecore">ServiceIdentification</a></td>
+<td class="colLast">
+<div class="block">Identifies a <a href="../../../com/bose/blecore/Service.html" title="class in com.bose.blecore"><code>Service</code></a> that is provided by a <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/Session.html" title="interface in com.bose.blecore">Session</a></td>
+<td class="colLast">
+<div class="block">
+ A session represents the communication between this device and a remote <a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html" target="_top" title="class or interface in android.bluetooth"><code>BluetoothDevice</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/SessionBondingDelegate.html" title="interface in com.bose.blecore">SessionBondingDelegate</a></td>
+<td class="colLast">
+<div class="block">The bonding delegate gets notified when a device is required to be put into pairing mode in order
+ to proceed with the connection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/SessionDelegate.html" title="interface in com.bose.blecore">SessionDelegate</a></td>
+<td class="colLast">
+<div class="block">A session delegate is notified of connectivity events related to a <a href="../../../com/bose/blecore/Session.html" title="interface in com.bose.blecore"><code>Session</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/BaseGattListener.html" title="class in com.bose.blecore">BaseGattListener</a></td>
+<td class="colLast">
+<div class="block">Helper class that implements <code>GattListener</code> interface.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/BluetoothManager.html" title="class in com.bose.blecore">BluetoothManager</a></td>
+<td class="colLast">
+<div class="block">The <a href="../../../com/bose/blecore/BluetoothManager.html" title="class in com.bose.blecore"><code>BluetoothManager</code></a> class is used to discover devices.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/DiscoveredDevice.html" title="class in com.bose.blecore">DiscoveredDevice</a></td>
+<td class="colLast">
+<div class="block">Represents a Bluetooth device that has been discovered.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/Logger.html" title="class in com.bose.blecore">Logger</a></td>
+<td class="colLast">
+<div class="block">The logger wrapper class used by Bose Wearable project.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/SerializedGatt.html" title="class in com.bose.blecore">SerializedGatt</a></td>
+<td class="colLast">
+<div class="block">
+ A wrapper class for <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html" target="_top" title="class or interface in android.bluetooth"><code>BluetoothGatt</code></a> that implements queueing of operations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/Service.html" title="class in com.bose.blecore">Service</a></td>
+<td class="colLast">
+<div class="block">Base class for implementing Bluetooth GATT services.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Enum Summary table, listing enums, and an explanation">
+<caption><span>Enum Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Enum</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/BondingState.html" title="enum in com.bose.blecore">BondingState</a></td>
+<td class="colLast">
+<div class="block">Bonding state of a <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/Logger.Topic.html" title="enum in com.bose.blecore">Logger.Topic</a></td>
+<td class="colLast">
+<div class="block">The topic (type) of the logging message.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/ScanError.html" title="enum in com.bose.blecore">ScanError</a></td>
+<td class="colLast">
+<div class="block">Notifies the type of error that occurs on scanning.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Exception Summary table, listing exceptions, and an explanation">
+<caption><span>Exception Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Exception</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/DeviceException.html" title="class in com.bose.blecore">DeviceException</a></td>
+<td class="colLast">
+<div class="block">Indicates an error that occurred in communication with a <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/FirmwareUpdateRequiredException.html" title="class in com.bose.blecore">FirmwareUpdateRequiredException</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/GattOperationException.html" title="class in com.bose.blecore">GattOperationException</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/bose/blecore/MissingCharacteristicException.html" title="class in com.bose.blecore">MissingCharacteristicException</a></td>
+<td class="colLast">
+<div class="block">Indicates an error that occurred when attempting to connect to a <a href="../../../com/bose/blecore/Device.html" title="interface in com.bose.blecore"><code>Device</code></a> which advertised
+ a required service but the service is missing required characteristic(s).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="package.description">
+<!--   -->
+</a>
+<h2 title="Package com.bose.blecore Description">Package com.bose.blecore Description</h2>
+<div class="block">Low level Bluetooth GATT abstractions</div>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev&nbsp;Package</li>
+<li><a href="../../../com/bose/blecore/deviceinformation/package-summary.html">Next&nbsp;Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/blecore/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

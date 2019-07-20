@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/sensor_type_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            app:title="@string/sensor_info_type"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/scaled_value_range_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            app:title="@string/sensor_info_scaled_range"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/raw_value_range_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            app:title="@string/sensor_info_raw_range"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/sample_length_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            app:title="@string/sensor_info_sample_len"/>
+
+        <TextView
+            style="@style/SectionHeader"
+            android:id="@+id/device_header"
+            android:layout_marginTop="8dp"
+            android:text="@string/sample_periods"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/sample_320"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            android:text="@string/sample_period_320"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/sample_160"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            android:text="@string/sample_period_160"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/sample_80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            android:text="@string/sample_period_80"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/sample_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            android:text="@string/sample_period_40"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/sample_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            android:text="@string/sample_period_20"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/sample_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            android:text="@string/sample_period_10"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/sample_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="@dimen/view_holder_padding"
+            android:paddingEnd="@dimen/view_holder_padding"
+            android:text="@string/sample_period_5"/>
+
+    </LinearLayout>
+</ScrollView>

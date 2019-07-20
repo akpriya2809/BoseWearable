@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Scene Example</string>
+    <string name="values_format">P=%1$s R=%2$s Y=%3$s</string>
+    <string name="accuracy_format">Accuracy: %s</string>
+    <string name="settings_menu">Settings</string>
+    <string name="menu_corrected_initially">Corrected by initial orientation</string>
+    <string name="menu_reset_initial">Reset initial orientation</string>
+    <string name="menu_reset_initial_summary">"You can also reset the initial orientation by AR Input gesture."</string>
+    <string name="menu_mirror">Mirror readings</string>
+    <string name="menu_cat_mirroring">Mirroring</string>
+    <string name="menu_cat_correction">Correction</string>
+    <string name="rotation_source">Rotation Source</string>
+    <string name="rotation_source_rotation_vector">Rotation Vector</string>
+    <string name="rotation_source_game">Game Rotation Vector</string>
+    <string name="rotation_source_desc">Rotation Vector uses the magnetometer, providing rotation relative to magnetic north. Game rotation does not use the magnetometer.</string>
+    <string name="search_for_devices">Connect</string>
+    <string name="main_fragment_title">Scene</string>
+    <string name="settings_fragment_title">Settings</string>
+    <string name="autoselect_switch">Connect to last</string>
+    <string name="autoselect_desc">If checked, will attempt to connect to the last-used device if it is found within five seconds.</string>
+    <string name="simulated_device_button">Use Simulated Attitude</string>
+    <string name="simulated_device_desc">This option uses the Android device\'s motion sensors to simulate attitude tracking.</string>
+    <string name="focus_recevied">Received focus</string>
+    <string name="focus_lost">No focus</string>
+    <string name="focus_request">Request Focus</string>
+    <string name="device_not_found">Could not connect to device %s</string>
+    <string name="version_name">BoseWearable %1$s (%2$d)</string>
+    <string name="sensors_suspended">Sensors suspended</string>
+    <string name="sensors_resumed">Sensors resumed</string>
+    <string name="no_device_selected">Can not continue without Bose AR, please select a device</string>
+    <string name="scan_failed">Could not start scan: %s</string>
+    <string name="scan_error_already_started">Already started</string>
+    <string name="scan_error_internal">Internal Error</string>
+    <string name="scan_error_permission_denied">Permission denied</string>
+    <string name="scan_error_bluetooth_disabled">Bluetooth is disabled</string>
+    <string name="scan_error_feature_unsupported">Feature not supported</string>
+    <string name="scan_error_application_registration_failed">Application registration failed</string>
+    <string name="scan_error_unknown">Unknown error</string>
+</resources>

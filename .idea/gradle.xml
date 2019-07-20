@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/basic-example" />
+            <option value="$PROJECT_DIR$/blecore" />
+            <option value="$PROJECT_DIR$/bosewearable" />
+            <option value="$PROJECT_DIR$/bosewearableui" />
+            <option value="$PROJECT_DIR$/data-example" />
+            <option value="$PROJECT_DIR$/heading-example" />
+            <option value="$PROJECT_DIR$/scene-example" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

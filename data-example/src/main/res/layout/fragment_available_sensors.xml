@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/view_holder_padding"
+        android:paddingEnd="@dimen/view_holder_padding">
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/accelerometerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/accelerometer"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/gyroscopeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/gyroscope"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/rotationVectorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/rotation_vector"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/gameRotationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/game_rotation_vector"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/orientationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/orientation"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/magnetometerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/magnetometer"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            android:id="@+id/uncalibratedMagnetometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/uncalibrated_magnetometer"/>
+    </LinearLayout>
+</ScrollView>

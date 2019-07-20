@@ -1,0 +1,13 @@
+com.bose.blecore
+com.bose.blecore.deviceinformation
+com.bose.blecore.util
+com.bose.bosewearableui
+com.bose.wearable
+com.bose.wearable.firmwareupgrade
+com.bose.wearable.focus
+com.bose.wearable.impl
+com.bose.wearable.sensordata
+com.bose.wearable.services.bmap
+com.bose.wearable.services.wearablesensor
+com.bose.wearable.simulated
+com.bose.wearable.wearabledevice

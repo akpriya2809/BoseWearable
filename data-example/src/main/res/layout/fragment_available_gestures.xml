@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/view_holder_padding"
+        android:paddingEnd="@dimen/view_holder_padding">
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            style="@style/AvailableGestureText"
+            android:id="@+id/singleTapText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/single_tap"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            style="@style/AvailableGestureText"
+            android:id="@+id/doubleTapText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/double_tap"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            style="@style/AvailableGestureText"
+            android:id="@+id/headNodText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/head_nod"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            style="@style/AvailableGestureText"
+            android:id="@+id/headShakeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/head_shake"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            style="@style/AvailableGestureText"
+            android:id="@+id/touchAndHoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/touch_and_hold"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            style="@style/AvailableGestureText"
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/input_gesture"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            style="@style/AvailableGestureText"
+            android:id="@+id/affirmativeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/affirmative_gesture"/>
+
+        <com.bose.wearable.sample.views.CheckedTextView
+            style="@style/AvailableGestureText"
+            android:id="@+id/negativeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/negative_gesture"/>
+
+    </LinearLayout>
+</ScrollView>

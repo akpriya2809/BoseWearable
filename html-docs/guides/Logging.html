@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="bosewearablesdklogging">Bose Wearable SDK Logging</h1>
+
+<p>BoseWearable-Android is using the standard Android logging
+<a href="https://developer.android.com/reference/android/util/Log.html">framework</a>. To see the output of
+Android logs, <code>adb logcat</code> command can be used from terminal. Android logging framework uses
+following log levels:</p>
+
+<pre><code>VERBOSE
+DEBUG
+*INFO
+*WARN
+*ERROR
+</code></pre>
+
+<ul>
+<li>indicates that the log level is enabled by default.</li>
+</ul>
+
+<h2 id="locateadbtool">Locate <code>adb</code> tool</h2>
+
+<p>The default location on MacOS <code>~/Library/Android/sdk/platform-tools/adb</code>. If it&#8217;s not there, you can
+find the Android SDK installation directory from Android Studio. Open Android Studio Preferences and
+have a look at:</p>
+
+<p>Appearance &amp; Behavior -&gt; System Settings -&gt; Android SDK -&gt; Android SDK Location</p>
+
+<p>The <code>adb</code> binary will be in <code>$ANDROID_SDK_LOCATION/platform-tools/adb</code>.</p>
+
+<h2 id="enabledebuglogging">Enable debug logging</h2>
+
+<p>BoseWearable-Android is using the following logging &#8220;topics&#8221;, each of which can be controlled
+independently using the <code>adb</code> tool. The topics are:</p>
+
+<pre><code>BoseWearableDiscovery
+BoseWearableTraffic
+BoseWearableDevice
+BoseWearableService
+BoseWearableSession
+BoseWearableSensor
+</code></pre>
+
+<p>Hopefully the meaning of each topic is self explanatory.
+To see debug log message for device discovery and Bluetooth traffic for an example, the following
+commands can be used:</p>
+
+<pre><code class="shell">$ adb shell setprop log.tag.BoseWearableDiscovery DEBUG
+$ adb shell setprop log.tag.BoseWearableTraffic DEBUG
+</code></pre>
+
+<h2 id="monitorlogs">Monitor logs</h2>
+
+<p>To see log messages, use <code>adb</code> command:</p>
+
+<pre><code class="shell">$ adb logcat | grep BoseWearable
+</code></pre>
+
+</body>
+</html>
+

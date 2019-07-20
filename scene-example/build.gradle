@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+apply from: "${project.rootDir}/quality.gradle"
+
+static def focusMode() {
+    String focusMode = System.getenv("FOCUS_MODE")
+    if (focusMode == null) {
+        focusMode = "IGNORED"
+    }
+
+    return "\"$focusMode\""
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.bose.ar.SceneExample"
+        minSdkVersion 24
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "FOCUS_MODE", focusMode()
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = outputFileName.replace(".apk", "-${variant.versionCode}.apk")
+        }
+    }
+}
+
+dependencies {
+    def nav_version = '2.0.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.google.android.material:material:1.1.0-alpha06'
+
+    implementation 'androidx.annotation:annotation:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.preference:preference:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+
+    implementation 'com.google.ar.sceneform:core:1.9.0'
+
+    implementation 'com.google.android.gms:play-services-tasks:16.0.1'
+
+    implementation "com.bose.wearable:blecore:release@aar"
+    implementation "com.bose.wearable:bosewearable:release@aar"
+    implementation "com.bose.wearable:bosewearableui:release@aar"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}
+
+sceneform.asset('sampledata/models/alto.obj',
+        'default',
+        'sampledata/models/alto.sfa',
+        'src/main/res/raw/alto')
+
+sceneform.asset('sampledata/models/rondo.obj',
+        'default',
+        'sampledata/models/rondo.sfa',
+        'src/main/res/raw/rondo')
+
+sceneform.asset('sampledata/models/qc35ii-black.obj',
+        'default',
+        'sampledata/models/qc35ii-black.sfa',
+        'src/main/res/raw/qc35ii_black')
+
+sceneform.asset('sampledata/models/qc35ii-silver.obj',
+        'default',
+        'sampledata/models/qc35ii-silver.sfa',
+        'src/main/res/raw/qc35ii_silver')

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="generatingdocumentation">Generating Documentation</h1>
+
+<p>API documentation is generated using standard javadoc.
+Developer guides are generated using <a href="https://fletcherpenney.net/multimarkdown/">MultiMarkdown</a>.
+Installation instructions are available <a href="http://fletcher.github.io/MultiMarkdown-5/installation">here</a>.</p>
+
+<p>To build the documentation, open a Terminal in the root of the clone. Then run the following commands:</p>
+
+<pre><code class="shell"># Assuming you are in the root of BoseWearable-Android
+
+$ ./gradlew generateCombinedJavadoc
+</code></pre>
+
+<p>This will generate the documentation under <code>build/docs/javadoc/</code>. Open the <code>index.html</code> file
+in a web browser to read the generated documentation.</p>
+
+</body>
+</html>
+

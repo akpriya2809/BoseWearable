@@ -1,0 +1,22 @@
+/**
+ * Pull required environment variables from the system and throw an IllegalStateException
+ * if the variable is missing for a successful build
+ *
+ * @param name of environment variable to pull
+ * @return the environment variable, if set
+ */
+static def _getSystemEnv(final systemEnv) {
+    def environmentVar = System.getenv(systemEnv)
+    if(environmentVar != null) {
+        return environmentVar
+    } else {
+        throw new IllegalArgumentException("Missing required environment variable: $systemEnv")
+    }
+}
+
+// Export to project extension.
+// Note that the ext name must be different than the local gradle name or else it will be not
+// exposed
+ext {
+    getSystemEnv = this.&_getSystemEnv
+}

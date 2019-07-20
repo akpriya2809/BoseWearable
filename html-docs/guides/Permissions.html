@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="permissionsguide">Permissions Guide</h1>
+
+<p>BLE scanning on Android requires access to user&#8217;s location: https://developer.android.com/guide/topics/connectivity/bluetooth-le#permissions</p>
+
+<p>An anonymous StackOverflow post explains the reasons quite well:</p>
+
+<blockquote>
+<p>BLE beacons can be used to get location information using nothing more than the BLE broadcast UUID data and an internet connection (e.g. iBeacon, AltBeacon etc.) Since this is possible and the data can be acquired via scan, a permission for location is required. In reality, ACCESS_COARSE_LOCATION is the required level in order to get NetworkProvider level of permission. By using, ACCESS_FINE_LOCATION you get NetworkProvider as well as GPS.</p>
+</blockquote>
+
+<p>Applications using Bose Wearable SDK will need to ask for the location permission at runtime. <a href="Usage.html#withbosewearableui">bosewearableui module</a> does it for you, but you&#8217;ll need to handle it yourself when building a custom device discovery dialog.</p>
+
+</body>
+</html>
+

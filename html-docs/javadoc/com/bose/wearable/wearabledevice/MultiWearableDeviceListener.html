@@ -1,0 +1,710 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>MultiWearableDeviceListener (BoseWearable Android)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+<script type="text/javascript" src="../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="MultiWearableDeviceListener (BoseWearable Android)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../com/bose/wearable/wearabledevice/EmptyDeviceProperties.html" title="class in com.bose.wearable.wearabledevice"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/bose/wearable/wearabledevice/WearableDevice.html" title="interface in com.bose.wearable.wearabledevice"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html" target="_top">Frames</a></li>
+<li><a href="MultiWearableDeviceListener.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.bose.wearable.impl.MultiListener">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.bose.wearable.wearabledevice</div>
+<h2 title="Class MultiWearableDeviceListener" class="title">Class MultiWearableDeviceListener</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../com/bose/wearable/impl/MultiListener.html" title="class in com.bose.wearable.impl">com.bose.wearable.impl.MultiListener</a>&lt;<a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>com.bose.wearable.wearabledevice.MultiWearableDeviceListener</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="typeNameLabel">MultiWearableDeviceListener</span>
+extends <a href="../../../../com/bose/wearable/impl/MultiListener.html" title="class in com.bose.wearable.impl">MultiListener</a>&lt;<a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a>&gt;
+implements <a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></pre>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.com.bose.wearable.impl.MultiListener">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.bose.wearable.impl.<a href="../../../../com/bose/wearable/impl/MultiListener.html" title="class in com.bose.wearable.impl">MultiListener</a></h3>
+<code><a href="../../../../com/bose/wearable/impl/MultiListener.html#mChildren">mChildren</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#MultiWearableDeviceListener--">MultiWearableDeviceListener</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onDeviceInfoRead-com.bose.blecore.deviceinformation.DeviceInformation-">onDeviceInfoRead</a></span>(<a href="../../../../com/bose/blecore/deviceinformation/DeviceInformation.html" title="interface in com.bose.blecore.deviceinformation">DeviceInformation</a>&nbsp;deviceInformation)</code>
+<div class="block">Indicates that the <a href="../../../../com/bose/blecore/deviceinformation/DeviceInformation.html" title="interface in com.bose.blecore.deviceinformation"><code>DeviceInformation</code></a> value was updated.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onDevicePropertiesRead-com.bose.wearable.wearabledevice.DeviceProperties-">onDevicePropertiesRead</a></span>(<a href="../../../../com/bose/wearable/wearabledevice/DeviceProperties.html" title="interface in com.bose.wearable.wearabledevice">DeviceProperties</a>&nbsp;deviceProperties)</code>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/wearabledevice/DeviceProperties.html" title="interface in com.bose.wearable.wearabledevice"><code>DeviceProperties</code></a> value was updated.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onFocusGained--">onFocusGained</a></span>()</code>
+<div class="block">For Internal Use Only.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onFocusLost--">onFocusLost</a></span>()</code>
+<div class="block">For Internal Use Only.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onFocusRequestFailed-com.bose.wearable.BoseWearableException-">onFocusRequestFailed</a></span>(<a href="../../../../com/bose/wearable/BoseWearableException.html" title="class in com.bose.wearable">BoseWearableException</a>&nbsp;wearableException)</code>
+<div class="block">For Internal Use Only.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onFocusRequestSucceeded--">onFocusRequestSucceeded</a></span>()</code>
+<div class="block">For Internal Use Only.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onGestureConfigurationChanged-com.bose.wearable.services.wearablesensor.GestureConfiguration-">onGestureConfigurationChanged</a></span>(<a href="../../../../com/bose/wearable/services/wearablesensor/GestureConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor">GestureConfiguration</a>&nbsp;gestureConfiguration)</code>
+<div class="block">Indicates that a requested change to the device's gesture configuration succeeded.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onGestureConfigurationError-com.bose.wearable.BoseWearableException-">onGestureConfigurationError</a></span>(<a href="../../../../com/bose/wearable/BoseWearableException.html" title="class in com.bose.wearable">BoseWearableException</a>&nbsp;wearableException)</code>
+<div class="block">Indicates that a requested change to the device's gesture configuration failed with the
+ associated error.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onGestureConfigurationRead-com.bose.wearable.services.wearablesensor.GestureConfiguration-">onGestureConfigurationRead</a></span>(<a href="../../../../com/bose/wearable/services/wearablesensor/GestureConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor">GestureConfiguration</a>&nbsp;gestureConfiguration)</code>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/services/wearablesensor/GestureConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor"><code>GestureConfiguration</code></a> value was updated.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onGestureDataRead-com.bose.wearable.sensordata.GestureData-">onGestureDataRead</a></span>(<a href="../../../../com/bose/wearable/sensordata/GestureData.html" title="interface in com.bose.wearable.sensordata">GestureData</a>&nbsp;gestureData)</code>
+<div class="block">Indicates that gesture data was received.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onSensorConfigurationChanged-com.bose.wearable.services.wearablesensor.SensorConfiguration-">onSensorConfigurationChanged</a></span>(<a href="../../../../com/bose/wearable/services/wearablesensor/SensorConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor">SensorConfiguration</a>&nbsp;sensorConfiguration)</code>
+<div class="block">Indicates that a requested change to the device's sensor configuration succeeded.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onSensorConfigurationError-com.bose.wearable.BoseWearableException-">onSensorConfigurationError</a></span>(<a href="../../../../com/bose/wearable/BoseWearableException.html" title="class in com.bose.wearable">BoseWearableException</a>&nbsp;wearableException)</code>
+<div class="block">Indicates that a requested change to the device's sensor configuration failed with the
+ associated error.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onSensorConfigurationRead-com.bose.wearable.services.wearablesensor.SensorConfiguration-">onSensorConfigurationRead</a></span>(<a href="../../../../com/bose/wearable/services/wearablesensor/SensorConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor">SensorConfiguration</a>&nbsp;sensorConfiguration)</code>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/services/wearablesensor/SensorConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor"><code>SensorConfiguration</code></a> value was updated.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onSensorDataRead-com.bose.wearable.sensordata.SensorValue-">onSensorDataRead</a></span>(<a href="../../../../com/bose/wearable/sensordata/SensorValue.html" title="interface in com.bose.wearable.sensordata">SensorValue</a>&nbsp;sensorValue)</code>
+<div class="block">Indicates that sensor data was received.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onSensorInfoRead-com.bose.wearable.services.wearablesensor.SensorInformation-">onSensorInfoRead</a></span>(<a href="../../../../com/bose/wearable/services/wearablesensor/SensorInformation.html" title="interface in com.bose.wearable.services.wearablesensor">SensorInformation</a>&nbsp;sensorInformation)</code>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/services/wearablesensor/SensorInformation.html" title="interface in com.bose.wearable.services.wearablesensor"><code>SensorInformation</code></a> value was updated.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onSensorsResumed--">onSensorsResumed</a></span>()</code>
+<div class="block">Indicates that the sensors are resumed.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onSensorsSuspended-com.bose.wearable.services.wearablesensor.SensorsSuspensionReason-">onSensorsSuspended</a></span>(<a href="../../../../com/bose/wearable/services/wearablesensor/SensorsSuspensionReason.html" title="enum in com.bose.wearable.services.wearablesensor">SensorsSuspensionReason</a>&nbsp;suspensionReason)</code>
+<div class="block">Indicates that the sensors are suspended.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html#onWearableDeviceInfoRead-com.bose.wearable.services.wearablesensor.WearableDeviceInformation-">onWearableDeviceInfoRead</a></span>(<a href="../../../../com/bose/wearable/services/wearablesensor/WearableDeviceInformation.html" title="interface in com.bose.wearable.services.wearablesensor">WearableDeviceInformation</a>&nbsp;deviceInformation)</code>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/services/wearablesensor/WearableDeviceInformation.html" title="interface in com.bose.wearable.services.wearablesensor"><code>WearableDeviceInformation</code></a> value was updated.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.bose.wearable.impl.MultiListener">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.bose.wearable.impl.<a href="../../../../com/bose/wearable/impl/MultiListener.html" title="class in com.bose.wearable.impl">MultiListener</a></h3>
+<code><a href="../../../../com/bose/wearable/impl/MultiListener.html#addListener-T-">addListener</a>, <a href="../../../../com/bose/wearable/impl/MultiListener.html#clear--">clear</a>, <a href="../../../../com/bose/wearable/impl/MultiListener.html#removeListener-T-">removeListener</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="MultiWearableDeviceListener--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MultiWearableDeviceListener</h4>
+<pre>public&nbsp;MultiWearableDeviceListener()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="onFocusLost--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onFocusLost</h4>
+<pre>public&nbsp;void&nbsp;onFocusLost()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onFocusLost--">WearableDeviceListener</a></code></span></div>
+<div class="block">For Internal Use Only.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onFocusLost--">onFocusLost</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onSensorsSuspended-com.bose.wearable.services.wearablesensor.SensorsSuspensionReason-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSensorsSuspended</h4>
+<pre>public&nbsp;void&nbsp;onSensorsSuspended(@NonNull
+                               <a href="../../../../com/bose/wearable/services/wearablesensor/SensorsSuspensionReason.html" title="enum in com.bose.wearable.services.wearablesensor">SensorsSuspensionReason</a>&nbsp;suspensionReason)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorsSuspended-com.bose.wearable.services.wearablesensor.SensorsSuspensionReason-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that the sensors are suspended.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorsSuspended-com.bose.wearable.services.wearablesensor.SensorsSuspensionReason-">onSensorsSuspended</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>suspensionReason</code> - The reason for suspension</dd>
+</dl>
+</li>
+</ul>
+<a name="onFocusGained--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onFocusGained</h4>
+<pre>public&nbsp;void&nbsp;onFocusGained()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onFocusGained--">WearableDeviceListener</a></code></span></div>
+<div class="block">For Internal Use Only.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onFocusGained--">onFocusGained</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onSensorsResumed--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSensorsResumed</h4>
+<pre>public&nbsp;void&nbsp;onSensorsResumed()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorsResumed--">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that the sensors are resumed.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorsResumed--">onSensorsResumed</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onFocusRequestSucceeded--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onFocusRequestSucceeded</h4>
+<pre>public&nbsp;void&nbsp;onFocusRequestSucceeded()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onFocusRequestSucceeded--">WearableDeviceListener</a></code></span></div>
+<div class="block">For Internal Use Only.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onFocusRequestSucceeded--">onFocusRequestSucceeded</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onFocusRequestFailed-com.bose.wearable.BoseWearableException-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onFocusRequestFailed</h4>
+<pre>public&nbsp;void&nbsp;onFocusRequestFailed(@NonNull
+                                 <a href="../../../../com/bose/wearable/BoseWearableException.html" title="class in com.bose.wearable">BoseWearableException</a>&nbsp;wearableException)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onFocusRequestFailed-com.bose.wearable.BoseWearableException-">WearableDeviceListener</a></code></span></div>
+<div class="block">For Internal Use Only.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onFocusRequestFailed-com.bose.wearable.BoseWearableException-">onFocusRequestFailed</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>wearableException</code> - The reason why the focus request failed</dd>
+</dl>
+</li>
+</ul>
+<a name="onDeviceInfoRead-com.bose.blecore.deviceinformation.DeviceInformation-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onDeviceInfoRead</h4>
+<pre>public&nbsp;void&nbsp;onDeviceInfoRead(@NonNull
+                             <a href="../../../../com/bose/blecore/deviceinformation/DeviceInformation.html" title="interface in com.bose.blecore.deviceinformation">DeviceInformation</a>&nbsp;deviceInformation)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onDeviceInfoRead-com.bose.blecore.deviceinformation.DeviceInformation-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that the <a href="../../../../com/bose/blecore/deviceinformation/DeviceInformation.html" title="interface in com.bose.blecore.deviceinformation"><code>DeviceInformation</code></a> value was updated.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onDeviceInfoRead-com.bose.blecore.deviceinformation.DeviceInformation-">onDeviceInfoRead</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>deviceInformation</code> - The new device information</dd>
+</dl>
+</li>
+</ul>
+<a name="onWearableDeviceInfoRead-com.bose.wearable.services.wearablesensor.WearableDeviceInformation-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onWearableDeviceInfoRead</h4>
+<pre>public&nbsp;void&nbsp;onWearableDeviceInfoRead(@NonNull
+                                     <a href="../../../../com/bose/wearable/services/wearablesensor/WearableDeviceInformation.html" title="interface in com.bose.wearable.services.wearablesensor">WearableDeviceInformation</a>&nbsp;deviceInformation)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onWearableDeviceInfoRead-com.bose.wearable.services.wearablesensor.WearableDeviceInformation-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/services/wearablesensor/WearableDeviceInformation.html" title="interface in com.bose.wearable.services.wearablesensor"><code>WearableDeviceInformation</code></a> value was updated.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onWearableDeviceInfoRead-com.bose.wearable.services.wearablesensor.WearableDeviceInformation-">onWearableDeviceInfoRead</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>deviceInformation</code> - The new wearable device information</dd>
+</dl>
+</li>
+</ul>
+<a name="onSensorInfoRead-com.bose.wearable.services.wearablesensor.SensorInformation-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSensorInfoRead</h4>
+<pre>public&nbsp;void&nbsp;onSensorInfoRead(@NonNull
+                             <a href="../../../../com/bose/wearable/services/wearablesensor/SensorInformation.html" title="interface in com.bose.wearable.services.wearablesensor">SensorInformation</a>&nbsp;sensorInformation)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorInfoRead-com.bose.wearable.services.wearablesensor.SensorInformation-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/services/wearablesensor/SensorInformation.html" title="interface in com.bose.wearable.services.wearablesensor"><code>SensorInformation</code></a> value was updated.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorInfoRead-com.bose.wearable.services.wearablesensor.SensorInformation-">onSensorInfoRead</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sensorInformation</code> - The new sensor information</dd>
+</dl>
+</li>
+</ul>
+<a name="onSensorConfigurationRead-com.bose.wearable.services.wearablesensor.SensorConfiguration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSensorConfigurationRead</h4>
+<pre>public&nbsp;void&nbsp;onSensorConfigurationRead(@NonNull
+                                      <a href="../../../../com/bose/wearable/services/wearablesensor/SensorConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor">SensorConfiguration</a>&nbsp;sensorConfiguration)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorConfigurationRead-com.bose.wearable.services.wearablesensor.SensorConfiguration-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/services/wearablesensor/SensorConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor"><code>SensorConfiguration</code></a> value was updated.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorConfigurationRead-com.bose.wearable.services.wearablesensor.SensorConfiguration-">onSensorConfigurationRead</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sensorConfiguration</code> - The new sensor configuration</dd>
+</dl>
+</li>
+</ul>
+<a name="onSensorConfigurationChanged-com.bose.wearable.services.wearablesensor.SensorConfiguration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSensorConfigurationChanged</h4>
+<pre>public&nbsp;void&nbsp;onSensorConfigurationChanged(@NonNull
+                                         <a href="../../../../com/bose/wearable/services/wearablesensor/SensorConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor">SensorConfiguration</a>&nbsp;sensorConfiguration)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorConfigurationChanged-com.bose.wearable.services.wearablesensor.SensorConfiguration-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that a requested change to the device's sensor configuration succeeded.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorConfigurationChanged-com.bose.wearable.services.wearablesensor.SensorConfiguration-">onSensorConfigurationChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sensorConfiguration</code> - The changed sensor configuration</dd>
+</dl>
+</li>
+</ul>
+<a name="onSensorConfigurationError-com.bose.wearable.BoseWearableException-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSensorConfigurationError</h4>
+<pre>public&nbsp;void&nbsp;onSensorConfigurationError(@NonNull
+                                       <a href="../../../../com/bose/wearable/BoseWearableException.html" title="class in com.bose.wearable">BoseWearableException</a>&nbsp;wearableException)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorConfigurationError-com.bose.wearable.BoseWearableException-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that a requested change to the device's sensor configuration failed with the
+ associated error.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorConfigurationError-com.bose.wearable.BoseWearableException-">onSensorConfigurationError</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>wearableException</code> - The reason for the failure</dd>
+</dl>
+</li>
+</ul>
+<a name="onSensorDataRead-com.bose.wearable.sensordata.SensorValue-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSensorDataRead</h4>
+<pre>public&nbsp;void&nbsp;onSensorDataRead(@NonNull
+                             <a href="../../../../com/bose/wearable/sensordata/SensorValue.html" title="interface in com.bose.wearable.sensordata">SensorValue</a>&nbsp;sensorValue)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorDataRead-com.bose.wearable.sensordata.SensorValue-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that sensor data was received.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onSensorDataRead-com.bose.wearable.sensordata.SensorValue-">onSensorDataRead</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sensorValue</code> - The latest sensor reading</dd>
+</dl>
+</li>
+</ul>
+<a name="onGestureConfigurationRead-com.bose.wearable.services.wearablesensor.GestureConfiguration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onGestureConfigurationRead</h4>
+<pre>public&nbsp;void&nbsp;onGestureConfigurationRead(@NonNull
+                                       <a href="../../../../com/bose/wearable/services/wearablesensor/GestureConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor">GestureConfiguration</a>&nbsp;gestureConfiguration)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onGestureConfigurationRead-com.bose.wearable.services.wearablesensor.GestureConfiguration-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/services/wearablesensor/GestureConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor"><code>GestureConfiguration</code></a> value was updated.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onGestureConfigurationRead-com.bose.wearable.services.wearablesensor.GestureConfiguration-">onGestureConfigurationRead</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>gestureConfiguration</code> - The new gesture configuration</dd>
+</dl>
+</li>
+</ul>
+<a name="onGestureConfigurationChanged-com.bose.wearable.services.wearablesensor.GestureConfiguration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onGestureConfigurationChanged</h4>
+<pre>public&nbsp;void&nbsp;onGestureConfigurationChanged(@NonNull
+                                          <a href="../../../../com/bose/wearable/services/wearablesensor/GestureConfiguration.html" title="interface in com.bose.wearable.services.wearablesensor">GestureConfiguration</a>&nbsp;gestureConfiguration)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onGestureConfigurationChanged-com.bose.wearable.services.wearablesensor.GestureConfiguration-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that a requested change to the device's gesture configuration succeeded.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onGestureConfigurationChanged-com.bose.wearable.services.wearablesensor.GestureConfiguration-">onGestureConfigurationChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>gestureConfiguration</code> - The changed gesture configuration</dd>
+</dl>
+</li>
+</ul>
+<a name="onGestureConfigurationError-com.bose.wearable.BoseWearableException-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onGestureConfigurationError</h4>
+<pre>public&nbsp;void&nbsp;onGestureConfigurationError(@NonNull
+                                        <a href="../../../../com/bose/wearable/BoseWearableException.html" title="class in com.bose.wearable">BoseWearableException</a>&nbsp;wearableException)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onGestureConfigurationError-com.bose.wearable.BoseWearableException-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that a requested change to the device's gesture configuration failed with the
+ associated error.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onGestureConfigurationError-com.bose.wearable.BoseWearableException-">onGestureConfigurationError</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>wearableException</code> - The reason for the failure</dd>
+</dl>
+</li>
+</ul>
+<a name="onGestureDataRead-com.bose.wearable.sensordata.GestureData-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onGestureDataRead</h4>
+<pre>public&nbsp;void&nbsp;onGestureDataRead(@NonNull
+                              <a href="../../../../com/bose/wearable/sensordata/GestureData.html" title="interface in com.bose.wearable.sensordata">GestureData</a>&nbsp;gestureData)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onGestureDataRead-com.bose.wearable.sensordata.GestureData-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that gesture data was received.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onGestureDataRead-com.bose.wearable.sensordata.GestureData-">onGestureDataRead</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>gestureData</code> - The latest gesture reading</dd>
+</dl>
+</li>
+</ul>
+<a name="onDevicePropertiesRead-com.bose.wearable.wearabledevice.DeviceProperties-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onDevicePropertiesRead</h4>
+<pre>public&nbsp;void&nbsp;onDevicePropertiesRead(@NonNull
+                                   <a href="../../../../com/bose/wearable/wearabledevice/DeviceProperties.html" title="interface in com.bose.wearable.wearabledevice">DeviceProperties</a>&nbsp;deviceProperties)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onDevicePropertiesRead-com.bose.wearable.wearabledevice.DeviceProperties-">WearableDeviceListener</a></code></span></div>
+<div class="block">Indicates that the <a href="../../../../com/bose/wearable/wearabledevice/DeviceProperties.html" title="interface in com.bose.wearable.wearabledevice"><code>DeviceProperties</code></a> value was updated.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html#onDevicePropertiesRead-com.bose.wearable.wearabledevice.DeviceProperties-">onDevicePropertiesRead</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/bose/wearable/wearabledevice/WearableDeviceListener.html" title="interface in com.bose.wearable.wearabledevice">WearableDeviceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>deviceProperties</code> - The new device properties</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../com/bose/wearable/wearabledevice/EmptyDeviceProperties.html" title="class in com.bose.wearable.wearabledevice"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/bose/wearable/wearabledevice/WearableDevice.html" title="interface in com.bose.wearable.wearabledevice"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?com/bose/wearable/wearabledevice/MultiWearableDeviceListener.html" target="_top">Frames</a></li>
+<li><a href="MultiWearableDeviceListener.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.bose.wearable.impl.MultiListener">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

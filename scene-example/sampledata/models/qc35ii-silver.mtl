@@ -1,0 +1,30 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl MAT_Headphones
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump -bm 0.140017 QC35_MAT01_Silver_Normal.png
+map_Kd QC35_MAT01_Silver_Diffuse.png
+map_Ns QC35_MAT01_Silver_Roughness.png
+refl QC35_MAT01_Silver_Metallic.png
+
+newmtl MTL_Headphones02
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump -bm 0.140017 QC35_MAT02_Silver_Normal.png
+map_Kd QC35_MAT02_Silver_Diffuse.png
+map_Ns QC35_MAT02_Silver_Roughness.png
+refl QC35_MAT02_Silver_Metallic.png

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="migratingtosdkv4fromv3">Migrating to SDK v4 from v3</h1>
+
+<p>This document explains how to migrate from v3 of the Bose Wearable SDK to v4.</p>
+
+<h2 id="breakingchanges">Breaking changes</h2>
+
+<p>BoseWearable-Android now requires minimum Android SDK version (minSdkVersion) 22 (LOLLIPOP_MR1). v3 required at least API 21 (LOLLIPOP).</p>
+
+<p>BLEcore (com.bose.wearable:blecore) now requires a new dependency, Tasks API from Google Play services. Please update your application&#8217;s dependencies and add the following dependency:</p>
+
+<pre><code class="text">implementation 'com.google.android.gms:play-services-tasks:16.0.1'
+</code></pre>
+
+<p>Bosewearable-UI (com.bose.wearable:bosewearableui) now requires new dependencies. Please update your application&#8217;s dependencies and add the following dependencies:</p>
+
+<pre><code class="text">implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+implementation 'com.google.android.material:material:1.1.0-alpha06'
+</code></pre>
+
+<p>If your application implements <code>WearableDeviceListener</code>, the following changes are necessary:</p>
+
+<pre><code class="java">// Add the 'SensorsSuspensionReason' argument
+void onSensorsSuspended(@NonNull SensorsSuspensionReason suspensionReason) {
+}
+
+// Add a new listener method
+void onDevicePropertiesRead(@NonNull DeviceProperties deviceProperties) {
+}
+</code></pre>
+
+<h2 id="userinterface">User Interface</h2>
+
+<p>Bose provided the <code>DeviceSearchFragment</code>. It would perform a device search and present UI to the user allowing the selection of a device. As a result, it would return the address of a <code>DiscoveredDevice</code>. It was the responsibility of the caller to open the session.</p>
+
+<p>In the v4 SDK, Bose has provided <code>DeviceConnectorActivity</code> and deprecated <code>DeviceSearchFragment</code>. This <code>Activity</code> presents an entirely new user interface for device search. It also guides the user through the secure pairing process, if required. Finally, it checks to see whether a firmware update is available and directs the user to the appropriate app to perform the firmware update. The return value is still the address of a <code>DiscoveredDevice</code>, but now there is an open <code>Session</code> for the device, eliminating the requirement to open the session from the client app.</p>
+
+<h3 id="continuingtousethev3api">Continuing to use the v3 API</h3>
+
+<p>We encourage all developers to switch over to the new <code>DeviceConnectorActivity</code> API. The old <code>DeviceSearchFragment</code> API will be removed from a future release of the SDK. If you want to continue using the old <code>DeviceSearchFragment</code> API, you need to handle secure pairing when connecting to devices that require a bonded connection.</p>
+
+<p>To do so, you must register a <code>SessionBondingDelegate</code> instance with the <code>Session</code> before calling <code>open()</code>. Failing to do so will result in a fatal error.</p>
+
+<p>When <code>SessionBondingDelegate.bondingRequired(Session)</code> is called, you must present user interface prompting the user to place the device into pairing mode. The process of opening the <code>Session</code> will wait indefinitely for the user to place the device into pairing mode.</p>
+
+<p>When <code>SessionBondingDelegate.bondingInProgress(Session)</code> is called, you must dismiss the user interface prompt provided above.</p>
+
+<p>Using <code>DeviceConnectorActivity</code> in the v4 API handles all of this for you.</p>
+
+<h3 id="migratingtothev4api">Migrating to the v4 API</h3>
+
+<p>Replace your call to create and present <code>DeviceSearchFragment</code> with a call to start <code>DeviceConnectorActivity</code>. You no longer need to open the session for the returned <code>DiscoveredDevice</code> when the operation is successful. You do not need to register a <code>SessionBondingDelegate</code> with the <code>Session</code>.</p>
+
+<p>For example:</p>
+
+<pre><code class="java">public class MainActivity extends AppCompatActivity {
+    private static final int AUTO_CONNECT_TIMEOUT = 5; // In seconds, use 0 to disable automatic reconnection
+    private static final int REQUEST_CODE_CONNECTOR = 1;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        findViewById(R.id.connectButton)
+            .setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    connect();
+                }
+            });
+    }
+
+    private void connect() {
+        // Tell the Connector UI which sensors and gestures are required by the app
+        Set&lt;SensorType&gt; sensorTypes = new ArraySet&lt;&gt;(
+            Arrays.asList(SensorType.ACCELEROMETER,
+            SensorType.ROTATION_VECTOR)
+        );
+        SensorIntent sensorIntent = new SensorIntent(sensorTypes, Collections.singleton(SamplePeriod._20_MS));
+
+        GestureIntent gestureIntent = new GestureIntent(Collections.singleton(GestureType.INPUT));
+
+        // Start the connector Activity
+        Intent intent = DeviceConnectorActivity.newIntent(this, AUTO_CONNECT_TIMEOUT,
+            sensorIntent, gestureIntent);
+
+        startActivityForResult(intent, REQUEST_CODE_CONNECTOR);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_CODE_CONNECTOR) {
+            if (resultCode == Activity.RESULT_OK) {
+                String deviceAddress = data.getStringExtra(DeviceConnectorActivity.CONNECTED_DEVICE);
+                BluetoothManager btManager = BoseWearable.getInstance().bluetoothManager();
+                Session session = btManager.session(btManager.deviceByAddress(deviceAddress));
+                WearableDevice wearableDevice = (WearableDevice) session.device();
+
+                // session is opened at this point and ready to use.
+                // It is up to the application to close the session when it is no longer needed.
+            } else if (resultCode == DeviceConnectorActivity.RESULT_SCAN_ERROR) {
+                ScanError scanError = (ScanError) data.getSerializableExtra(DeviceConnectorActivity.FAILURE_REASON);
+                // An error occurred when searching for a device.
+                // Present an error to the user.
+            } else if (resultCode == Activity.RESULT_CANCELED) {
+                // The user cancelled the search operation.
+            }
+        } else {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+}
+</code></pre>
+
+<h2 id="eulerangleconversion">Euler Angle Conversion</h2>
+
+<p>The <code>Quaternion</code> type in the SDK provides <code>pitch</code>, <code>roll</code>, and <code>yaw</code> properties that are now deprecated. These return the right-handed rotation around the X, Y, and Z axis, respectively, as defined in the Bose Wearable Coordinate System. However, these only work for the raw Quaternion coming from the device. If calibrating or mapping to a different coordinate system, derive your pitch, roll, and yaw in the new coordinate system from right-handed <code>Quaternion.xRotation()</code>, <code>Quaternion.yRotation()</code>, and <code>Quaternion.zRotation()</code>.</p>
+
+<p>For example:</p>
+
+<pre><code class="java">static final Quaternion TRANSLATION_Q = new Quaternion(1, 0, 0, 0);
+
+Quaternion quaternion = Quaternion.multiply(sensorValue.quaternion(), TRANSLATION_Q);
+
+double pitch = quaternion.xRotation();
+double roll = -quaternion.yRotation();
+double yaw = -quaternion.zRotation();
+</code></pre>
+
+<h2 id="deviceproperties">Device Properties</h2>
+
+<p>The Bose Wearable SDK now provides functionality to control the Product name, Active Noise Reduction (ANR) and Controllable Noise Cancellation (CNC) settings on the device. Note that not all devices support all these functions.</p>
+
+<p>See <code>WearableDevice.deviceProperties()</code> to get the properties.</p>
+
+<p>See <code>WearableDevice.changeName(String)</code>, <code>WearableDevice.changeAnr(AnrMode)</code> and <code>WearableDevice.changeCnc()</code> to change the properties.</p>
+
+<p>The DataExample app has been updated to demonstrate these features. They are available under Device &gt; Device Properties.</p>
+
+<h2 id="firmwareversion">Firmware Version</h2>
+
+<p>During connection establishment, a check is performed to see whether updated firmware is available. The result of this check is automatically presented to the user when using the <code>DeviceConnectorActivity</code> API. It is also available via the <code>FirmwareUpgrade.check(WearableDevice)</code> function.</p>
+
+<h2 id="suspension">Suspension</h2>
+
+<p>As before, devices may suspend the wearable sensor service. On certain devices, certain user-initiated activities cause the wearable sensor service to be suspended due to bandwidth or processing restrictions.</p>
+
+<p>When the service is suspended, you will continue to be sent a <code>WearableDeviceListener.onSensorsSuspended()</code>. In the v4 SDK, this event includes an associated <code>SensorsSuspensionReason</code> which you can use to inform the user why sensor data is no longer being received.</p>
+
+<p>As before, you will continue to be sent a <code>WearableDeviceListener.onSensorResumed()</code> event when the service resumes.</p>
+
+<h2 id="intents">Intents</h2>
+
+<p>An app may specify a set of sensor and gesture intents that describe which sensors, sample periods, and gestures are required. The SDK provides mechanisms to validate these intents to determine whether a device is compatible with the requirements of your app.</p>
+
+<p>You can provide <code>SensorIntent</code> and <code>GestureIntent</code> objects to the <code>DeviceConnectorActivity.newIntent()</code> method to have the intents validated upon connection. If the intents are not met, the connection fails.</p>
+
+<p>Alternatively, you can call <code>validateIntents(SensorIntent, GestureIntent)</code> after a connection to validate your intents manually.</p>
+
+</body>
+</html>
+

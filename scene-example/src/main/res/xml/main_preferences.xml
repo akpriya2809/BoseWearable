@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="correction_category"
+        app:title="@string/menu_cat_correction">
+
+        <SwitchPreferenceCompat
+            app:key="corrected_initially"
+            app:title="@string/menu_corrected_initially"
+            app:defaultValue="true"/>
+
+        <Preference
+            app:key="reset_initial"
+            app:title="@string/menu_reset_initial"
+            app:summary="@string/menu_reset_initial_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="mirror_category"
+        app:title="@string/menu_cat_mirroring">
+
+        <SwitchPreferenceCompat
+            app:key="mirror"
+            app:title="@string/menu_mirror"
+            app:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

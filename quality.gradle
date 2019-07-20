@@ -1,0 +1,16 @@
+apply plugin: 'pmd'
+check.dependsOn('pmd')
+
+task pmd(type: Pmd) {
+    ruleSets = []
+    ruleSetConfig = resources.text.fromFile("${project.rootDir}/config/pmd/ruleset.xml")
+
+    consoleOutput = true
+    source 'src'
+    include '**/*.java'
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}

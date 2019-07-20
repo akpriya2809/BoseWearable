@@ -1,0 +1,3 @@
+/build
+sampledata/models/*.sfa
+src/main/res/raw/*.sfb

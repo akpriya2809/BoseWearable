@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/device_header"
+            style="@style/SectionHeader"
+            android:text="@string/device_header" />
+
+        <com.bose.wearable.sample.views.SubSectionView
+            android:id="@+id/device_info_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/device_info" />
+
+        <com.bose.wearable.sample.views.SubSectionView
+            android:id="@+id/device_properties_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/device_properties" />
+
+        <com.bose.wearable.sample.views.SubSectionView
+            android:id="@+id/wearable_device_info_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wearable_device_info" />
+
+        <TextView
+            android:id="@+id/sensors_header"
+            style="@style/SectionHeader"
+            android:layout_marginTop="8dp"
+            android:text="@string/wearable_sensor_header" />
+
+        <com.bose.wearable.sample.views.SubSectionView
+            android:id="@+id/sensor_info_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wearable_sensor_info" />
+
+        <com.bose.wearable.sample.views.SubSectionView
+            android:id="@+id/sensor_conf_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wearable_sensor_config" />
+
+        <com.bose.wearable.sample.views.SubSectionView
+            android:id="@+id/sensor_data_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wearable_sensor_data" />
+
+        <TextView
+            android:id="@+id/gestures_header"
+            style="@style/SectionHeader"
+            android:text="@string/wearable_gesture_header" />
+
+        <com.bose.wearable.sample.views.SubSectionView
+            android:id="@+id/gestures_configuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wearable_gesture_config" />
+
+        <com.bose.wearable.sample.views.SubSectionView
+            android:id="@+id/gestures_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wearable_gesture_data" />
+
+    </LinearLayout>
+</ScrollView>

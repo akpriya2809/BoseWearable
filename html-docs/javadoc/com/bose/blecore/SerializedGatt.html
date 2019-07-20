@@ -1,0 +1,542 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>SerializedGatt (BoseWearable Android)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript" src="../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="SerializedGatt (BoseWearable Android)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/bose/blecore/ScanListener.html" title="interface in com.bose.blecore"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/bose/blecore/Service.html" title="class in com.bose.blecore"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/blecore/SerializedGatt.html" target="_top">Frames</a></li>
+<li><a href="SerializedGatt.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.bose.blecore</div>
+<h2 title="Class SerializedGatt" class="title">Class SerializedGatt</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>com.bose.blecore.SerializedGatt</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="typeNameLabel">SerializedGatt</span>
+extends <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><p>
+ A wrapper class for <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html" target="_top" title="class or interface in android.bluetooth"><code>BluetoothGatt</code></a> that implements queueing of operations. Multiple
+ operations (reads, writes, notification changes) can be queued and the operations run in
+ serialized fashion, one after another.
+ </p>
+
+ <p>
+ Additionally, implements a <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback.html" target="_top" title="class or interface in android.bluetooth"><code>BluetoothGattCallback</code></a> multiplexer, to register (and remove)
+ multiple callbacks.
+ </p></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#SerializedGatt--">SerializedGatt</a></span>()</code>
+<div class="block">Creates a new instance.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#addListener-com.bose.blecore.GattListener-">addListener</a></span>(com.bose.blecore.GattListener&nbsp;listener)</code>
+<div class="block">Register a new GATT listener.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#connect--">connect</a></span>()</code>
+<div class="block">Connect back to remote device.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#connect-android.content.Context-android.bluetooth.BluetoothDevice-">connect</a></span>(<a href="https://developer.android.com/reference/android/content/Context.html" target="_top" title="class or interface in android.content">Context</a>&nbsp;context,
+       <a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html" target="_top" title="class or interface in android.bluetooth">BluetoothDevice</a>&nbsp;device)</code>
+<div class="block">Start asynchronous connection to the bluetooth device.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#disconnect--">disconnect</a></span>()</code>
+<div class="block">Disconnect the device.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html" target="_top" title="class or interface in android.bluetooth">BluetoothGattService</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#getService-java.util.UUID-">getService</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>
+<div class="block">Look up a GATT service by its UUID.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/List.html" target="_top" title="class or interface in java.util">List</a>&lt;<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html" target="_top" title="class or interface in android.bluetooth">BluetoothGattService</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#getServices--">getServices</a></span>()</code>
+<div class="block">Get the list of discovered GATT services.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#readCharacteristic-android.bluetooth.BluetoothGattCharacteristic-">readCharacteristic</a></span>(<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html" target="_top" title="class or interface in android.bluetooth">BluetoothGattCharacteristic</a>&nbsp;characteristic)</code>
+<div class="block">Start asynchronous read operation.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#refreshServices--">refreshServices</a></span>()</code>
+<div class="block">Refresh GATT services.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#removeListener-com.bose.blecore.GattListener-">removeListener</a></span>(com.bose.blecore.GattListener&nbsp;listener)</code>
+<div class="block">Remove a registered listener.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#requestConnectionPriority-int-">requestConnectionPriority</a></span>(int&nbsp;connectionPriority)</code>
+<div class="block">Request a connection parameter update.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#setCharacteristicNotification-android.bluetooth.BluetoothGattCharacteristic-boolean-">setCharacteristicNotification</a></span>(<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html" target="_top" title="class or interface in android.bluetooth">BluetoothGattCharacteristic</a>&nbsp;characteristic,
+                             boolean&nbsp;enable)</code>
+<div class="block">Enable or disable GATT service characteristic notifications.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/SerializedGatt.html#writeCharacteristic-java.util.UUID-java.util.UUID-byte:A-">writeCharacteristic</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                   <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                   byte[]&nbsp;data)</code>
+<div class="block">Start asynchronous write operation.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="SerializedGatt--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SerializedGatt</h4>
+<pre>public&nbsp;SerializedGatt()</pre>
+<div class="block">Creates a new instance.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="addListener-com.bose.blecore.GattListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addListener</h4>
+<pre>public&nbsp;void&nbsp;addListener(@NonNull
+                        com.bose.blecore.GattListener&nbsp;listener)</pre>
+<div class="block">Register a new GATT listener.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listener</code> - The new listener to register</dd>
+</dl>
+</li>
+</ul>
+<a name="removeListener-com.bose.blecore.GattListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeListener</h4>
+<pre>public&nbsp;boolean&nbsp;removeListener(@NonNull
+                              com.bose.blecore.GattListener&nbsp;listener)</pre>
+<div class="block">Remove a registered listener.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listener</code> - The listener to remove</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the listener was registered</dd>
+</dl>
+</li>
+</ul>
+<a name="connect-android.content.Context-android.bluetooth.BluetoothDevice-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>connect</h4>
+<pre>public&nbsp;void&nbsp;connect(@NonNull
+                    <a href="https://developer.android.com/reference/android/content/Context.html" target="_top" title="class or interface in android.content">Context</a>&nbsp;context,
+                    @NonNull
+                    <a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html" target="_top" title="class or interface in android.bluetooth">BluetoothDevice</a>&nbsp;device)</pre>
+<div class="block">Start asynchronous connection to the bluetooth device.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - The context to use</dd>
+<dd><code>device</code> - The device to connect</dd>
+</dl>
+</li>
+</ul>
+<a name="connect--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>connect</h4>
+<pre>public&nbsp;void&nbsp;connect()</pre>
+<div class="block">Connect back to remote device.
+
+ <p>
+ This method is used to re-connect to a remote device after the
+ connection has been dropped. If the device is not in range, the
+ re-connection will be triggered once the device is back in range.
+ </p></div>
+</li>
+</ul>
+<a name="disconnect--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>disconnect</h4>
+<pre>public&nbsp;void&nbsp;disconnect()</pre>
+<div class="block">Disconnect the device.</div>
+</li>
+</ul>
+<a name="getServices--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getServices</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/List.html" target="_top" title="class or interface in java.util">List</a>&lt;<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html" target="_top" title="class or interface in android.bluetooth">BluetoothGattService</a>&gt;&nbsp;getServices()</pre>
+<div class="block">Get the list of discovered GATT services.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The GATT services</dd>
+</dl>
+</li>
+</ul>
+<a name="getService-java.util.UUID-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getService</h4>
+<pre>@Nullable
+public&nbsp;<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html" target="_top" title="class or interface in android.bluetooth">BluetoothGattService</a>&nbsp;getService(@NonNull
+                                                 <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;uuid)</pre>
+<div class="block">Look up a GATT service by its UUID.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uuid</code> - The GATT service UUID</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The GATT service (or <code>null</code> if no such service has been discovered</dd>
+</dl>
+</li>
+</ul>
+<a name="readCharacteristic-android.bluetooth.BluetoothGattCharacteristic-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readCharacteristic</h4>
+<pre>public&nbsp;void&nbsp;readCharacteristic(@NonNull
+                               <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html" target="_top" title="class or interface in android.bluetooth">BluetoothGattCharacteristic</a>&nbsp;characteristic)</pre>
+<div class="block">Start asynchronous read operation. The result of the operation is reported back by
+ <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback.html?is-external=true#onCharacteristicRead-android.bluetooth.BluetoothGatt-android.bluetooth.BluetoothGattCharacteristic-int-" title="class or interface in android.bluetooth"><code>BluetoothGattCallback.onCharacteristicRead(BluetoothGatt, BluetoothGattCharacteristic, int)</code></a>
+ callback.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>characteristic</code> - The characteristic to read</dd>
+</dl>
+</li>
+</ul>
+<a name="writeCharacteristic-java.util.UUID-java.util.UUID-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeCharacteristic</h4>
+<pre>public&nbsp;void&nbsp;writeCharacteristic(@NonNull
+                                <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                                @NonNull
+                                <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                                @NonNull
+                                byte[]&nbsp;data)</pre>
+<div class="block">Start asynchronous write operation. The result of the operation is reported back by
+ <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback.html?is-external=true#onCharacteristicWrite-android.bluetooth.BluetoothGatt-android.bluetooth.BluetoothGattCharacteristic-int-" title="class or interface in android.bluetooth"><code>BluetoothGattCallback.onCharacteristicWrite(BluetoothGatt, BluetoothGattCharacteristic, int)</code></a>
+ callback.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - The GATT service UUID</dd>
+<dd><code>characteristic</code> - The characteristic</dd>
+<dd><code>data</code> - The value to write</dd>
+</dl>
+</li>
+</ul>
+<a name="setCharacteristicNotification-android.bluetooth.BluetoothGattCharacteristic-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCharacteristicNotification</h4>
+<pre>public&nbsp;void&nbsp;setCharacteristicNotification(@NonNull
+                                          <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html" target="_top" title="class or interface in android.bluetooth">BluetoothGattCharacteristic</a>&nbsp;characteristic,
+                                          boolean&nbsp;enable)</pre>
+<div class="block">Enable or disable GATT service characteristic notifications. If enabled, the notifications
+ are sent via
+ <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback.html?is-external=true#onCharacteristicChanged-android.bluetooth.BluetoothGatt-android.bluetooth.BluetoothGattCharacteristic-" title="class or interface in android.bluetooth"><code>BluetoothGattCallback.onCharacteristicChanged(BluetoothGatt, BluetoothGattCharacteristic)</code></a>
+ callback.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>characteristic</code> - The characteristic</dd>
+<dd><code>enable</code> - <code>true</code> to enable notifications</dd>
+</dl>
+</li>
+</ul>
+<a name="requestConnectionPriority-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestConnectionPriority</h4>
+<pre>public&nbsp;void&nbsp;requestConnectionPriority(int&nbsp;connectionPriority)</pre>
+<div class="block">Request a connection parameter update.
+
+ <p>This function will send a connection parameter update request to the
+ remote device.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>connectionPriority</code> - Request a specific connection priority. Must be one of <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html?is-external=true#CONNECTION_PRIORITY_BALANCED" title="class or interface in android.bluetooth"><code>BluetoothGatt.CONNECTION_PRIORITY_BALANCED</code></a>, <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html?is-external=true#CONNECTION_PRIORITY_HIGH" title="class or interface in android.bluetooth"><code>BluetoothGatt.CONNECTION_PRIORITY_HIGH</code></a>
+ or <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html?is-external=true#CONNECTION_PRIORITY_LOW_POWER" title="class or interface in android.bluetooth"><code>BluetoothGatt.CONNECTION_PRIORITY_LOW_POWER</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a name="refreshServices--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>refreshServices</h4>
+<pre>public&nbsp;void&nbsp;refreshServices()</pre>
+<div class="block">Refresh GATT services. Android OS Bluetooth stack caches the list of available services and
+ their characteristics for paired devices. New services or characteristics added (or removed)
+ by the remote Bluetooth device firmware are thus not detected, requiring either (a) to
+ unpair/pair cycle or (b) this method call.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/bose/blecore/ScanListener.html" title="interface in com.bose.blecore"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/bose/blecore/Service.html" title="class in com.bose.blecore"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/blecore/SerializedGatt.html" target="_top">Frames</a></li>
+<li><a href="SerializedGatt.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

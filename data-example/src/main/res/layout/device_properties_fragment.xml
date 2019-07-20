@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/view_holder_padding"
+        android:paddingEnd="@dimen/view_holder_padding">
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/protocolVersionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:title="@string/device_props_protocol_version"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/authSupportedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:title="@string/device_props_auth_supported"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/guidText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:title="@string/device_props_guid"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/productNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:title="@string/device_props_product_name"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/batteryLevelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:title="@string/device_props_battery_level"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/cncText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:title="@string/device_props_cnc"/>
+
+        <com.bose.wearable.sample.views.TwoLineTextView
+            android:id="@+id/anrText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:title="@string/device_props_anr"/>
+    </LinearLayout>
+</ScrollView>

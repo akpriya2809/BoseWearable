@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Basic Example</string>
+    <string name="attitude">Attitude</string>
+    <string name="pitch">Pitch</string>
+    <string name="roll">Roll</string>
+    <string name="yaw">Yaw</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+    <string name="search_for_devices">Connect</string>
+    <string name="autoselect_switch">Connect to last</string>
+    <string name="autoselect_desc">If checked, will attempt to connect to the last-used device if it is found within five seconds.</string>
+    <string name="use_simulated_device">Use Simulated Device</string>
+    <string name="scan_failed">Could not start scan: %s</string>
+    <string name="scan_error_already_started">Already started</string>
+    <string name="scan_error_internal">Internal Error</string>
+    <string name="scan_error_permission_denied">Permission denied</string>
+    <string name="scan_error_bluetooth_disabled">Bluetooth is disabled</string>
+    <string name="scan_error_feature_unsupported">Feature not supported</string>
+    <string name="scan_error_application_registration_failed">Application registration failed</string>
+    <string name="scan_error_unknown">Unknown error</string>
+    <string name="version_name">BoseWearable %1$s (%2$d)</string>
+    <string name="sensors_suspended">Sensors suspended</string>
+    <string name="sensors_resumed">Sensors resumed</string>
+    <string name="no_device_selected">Can not continue without Bose AR, please select a device</string>
+</resources>

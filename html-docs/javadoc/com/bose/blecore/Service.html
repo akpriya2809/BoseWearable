@@ -1,0 +1,652 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>Service (BoseWearable Android)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript" src="../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Service (BoseWearable Android)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/bose/blecore/SerializedGatt.html" title="class in com.bose.blecore"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/bose/blecore/ServiceIdentification.html" title="interface in com.bose.blecore"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/blecore/Service.html" target="_top">Frames</a></li>
+<li><a href="Service.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.bose.blecore</div>
+<h2 title="Class Service" class="title">Class Service</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>com.bose.blecore.Service</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../com/bose/blecore/deviceinformation/DeviceInformationService.html" title="class in com.bose.blecore.deviceinformation">DeviceInformationService</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="typeNameLabel">Service</span>
+extends <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Base class for implementing Bluetooth GATT services.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#Service-com.bose.blecore.SerializedGatt-java.util.UUID-">Service</a></span>(<a href="../../../com/bose/blecore/SerializedGatt.html" title="class in com.bose.blecore">SerializedGatt</a>&nbsp;gatt,
+       <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>
+<div class="block">Creates a new instance of Service.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#addListener-com.bose.blecore.GattListener-">addListener</a></span>(com.bose.blecore.GattListener&nbsp;listener)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected com.google.android.gms.tasks.Task&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/List.html" target="_top" title="class or interface in java.util">List</a>&lt;com.google.android.gms.tasks.Task&lt;?&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#listen-java.util.Collection-boolean-com.google.android.gms.tasks.CancellationToken-">listen</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/Collection.html" target="_top" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&gt;&nbsp;characteristics,
+      boolean&nbsp;enable,
+      com.google.android.gms.tasks.CancellationToken&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected com.google.android.gms.tasks.Task&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Boolean.html" target="_top" title="class or interface in java.lang">Boolean</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#listen-java.util.UUID-boolean-com.google.android.gms.tasks.CancellationToken-">listen</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristicToListen,
+      boolean&nbsp;enabled,
+      com.google.android.gms.tasks.CancellationToken&nbsp;cancellationToken)</code>
+<div class="block">Start or stop listening for GATT characteristic changes (notifications).</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#onCharacteristicChanged-java.util.UUID-java.util.UUID-byte:A-">onCharacteristicChanged</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                       <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                       byte[]&nbsp;data)</code>
+<div class="block">Callback to notify about a remote characteristic change that was enabled with
+ <a href="../../../com/bose/blecore/Service.html#listen-java.util.UUID-boolean-com.google.android.gms.tasks.CancellationToken-"><code>listen(UUID, boolean, CancellationToken)</code></a> call.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#onCharacteristicReadFailure-java.util.UUID-java.util.UUID-int-">onCharacteristicReadFailure</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                           <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                           int&nbsp;status)</code>
+<div class="block">Callback to notify about failed completion of <a href="../../../com/bose/blecore/Service.html#requestData-java.util.UUID-"><code>requestData(UUID)</code></a> operation.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#onCharacteristicReadSuccess-java.util.UUID-java.util.UUID-byte:A-">onCharacteristicReadSuccess</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                           <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                           byte[]&nbsp;data)</code>
+<div class="block">Callback to notify about successful completion of <a href="../../../com/bose/blecore/Service.html#requestData-java.util.UUID-"><code>requestData(UUID)</code></a> operation.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#onCharacteristicWriteFailure-java.util.UUID-java.util.UUID-int-">onCharacteristicWriteFailure</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                            <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                            int&nbsp;status)</code>
+<div class="block">Callback to notify about failed completion of <a href="../../../com/bose/blecore/Service.html#writeValue-java.util.UUID-java.util.UUID-byte:A-"><code>writeValue(UUID, UUID, byte[])</code></a> operation.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#onCharacteristicWriteSuccess-java.util.UUID-java.util.UUID-byte:A-">onCharacteristicWriteSuccess</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                            <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                            byte[]&nbsp;data)</code>
+<div class="block">Callback to notify about successful completion of <a href="../../../com/bose/blecore/Service.html#writeValue-java.util.UUID-java.util.UUID-byte:A-"><code>writeValue(UUID, UUID, byte[])</code></a>
+ operation.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#onDescriptorWriteFailure-java.util.UUID-java.util.UUID-java.util.UUID-int-">onDescriptorWriteFailure</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;descriptor,
+                        int&nbsp;status)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#onDescriptorWriteSuccess-java.util.UUID-java.util.UUID-java.util.UUID-byte:A-byte:A-">onDescriptorWriteSuccess</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;descriptor,
+                        byte[]&nbsp;characteristicData,
+                        byte[]&nbsp;descriptorData)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#removeListener-com.bose.blecore.GattListener-">removeListener</a></span>(com.bose.blecore.GattListener&nbsp;listener)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#requestData-java.util.List-">requestData</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/List.html" target="_top" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids)</code>
+<div class="block">Read multiple GATT characteristics.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#requestData-java.util.UUID-">requestData</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>
+<div class="block">Read a GATT characteristics.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>com.google.android.gms.tasks.Task&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/List.html" target="_top" title="class or interface in java.util">List</a>&lt;com.google.android.gms.tasks.Task&lt;byte[]&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#requestDataTask-java.util.Collection-com.google.android.gms.tasks.CancellationToken-">requestDataTask</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/Collection.html" target="_top" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids,
+               com.google.android.gms.tasks.CancellationToken&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>com.google.android.gms.tasks.Task&lt;byte[]&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#requestDataTask-java.util.UUID-com.google.android.gms.tasks.CancellationToken-">requestDataTask</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;uuid,
+               com.google.android.gms.tasks.CancellationToken&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/bose/blecore/Service.html#writeValue-java.util.UUID-java.util.UUID-byte:A-">writeValue</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+          <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+          byte[]&nbsp;value)</code>
+<div class="block">Write a new value to a GATT characteristic.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Object.html" target="_top" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Service-com.bose.blecore.SerializedGatt-java.util.UUID-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Service</h4>
+<pre>public&nbsp;Service(@NonNull
+               <a href="../../../com/bose/blecore/SerializedGatt.html" title="class in com.bose.blecore">SerializedGatt</a>&nbsp;gatt,
+               @NonNull
+               <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;uuid)</pre>
+<div class="block">Creates a new instance of Service.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>gatt</code> - The GATT object to use</dd>
+<dd><code>uuid</code> - The service UUID</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="addListener-com.bose.blecore.GattListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addListener</h4>
+<pre>protected&nbsp;void&nbsp;addListener(@NonNull
+                           com.bose.blecore.GattListener&nbsp;listener)</pre>
+</li>
+</ul>
+<a name="removeListener-com.bose.blecore.GattListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeListener</h4>
+<pre>protected&nbsp;boolean&nbsp;removeListener(@NonNull
+                                 com.bose.blecore.GattListener&nbsp;listener)</pre>
+</li>
+</ul>
+<a name="requestData-java.util.UUID-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestData</h4>
+<pre>public&nbsp;void&nbsp;requestData(@NonNull
+                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;uuid)</pre>
+<div class="block">Read a GATT characteristics. The read value is reported by
+ <a href="../../../com/bose/blecore/Service.html#onCharacteristicReadSuccess-java.util.UUID-java.util.UUID-byte:A-"><code>onCharacteristicReadSuccess(UUID, UUID, byte[])</code></a> instance method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uuid</code> - The characteristic UUID to read</dd>
+</dl>
+</li>
+</ul>
+<a name="requestDataTask-java.util.UUID-com.google.android.gms.tasks.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestDataTask</h4>
+<pre>public&nbsp;com.google.android.gms.tasks.Task&lt;byte[]&gt;&nbsp;requestDataTask(@NonNull
+                                                                 <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;uuid,
+                                                                 @NonNull
+                                                                 com.google.android.gms.tasks.CancellationToken&nbsp;cancellationToken)</pre>
+</li>
+</ul>
+<a name="requestDataTask-java.util.Collection-com.google.android.gms.tasks.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestDataTask</h4>
+<pre>public&nbsp;com.google.android.gms.tasks.Task&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/List.html" target="_top" title="class or interface in java.util">List</a>&lt;com.google.android.gms.tasks.Task&lt;byte[]&gt;&gt;&gt;&nbsp;requestDataTask(@NonNull
+                                                                                                          <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/Collection.html" target="_top" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids,
+                                                                                                          @NonNull
+                                                                                                          com.google.android.gms.tasks.CancellationToken&nbsp;cancellationToken)</pre>
+</li>
+</ul>
+<a name="requestData-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestData</h4>
+<pre>public&nbsp;void&nbsp;requestData(@NonNull
+                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/List.html" target="_top" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids)</pre>
+<div class="block">Read multiple GATT characteristics. The read values are reported by
+ <a href="../../../com/bose/blecore/Service.html#onCharacteristicReadSuccess-java.util.UUID-java.util.UUID-byte:A-"><code>onCharacteristicReadSuccess(UUID, UUID, byte[])</code></a> instance method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uuids</code> - The characteristics UUIDs to read</dd>
+</dl>
+</li>
+</ul>
+<a name="writeValue-java.util.UUID-java.util.UUID-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeValue</h4>
+<pre>protected&nbsp;void&nbsp;writeValue(@NonNull
+                          <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                          @NonNull
+                          <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                          @NonNull
+                          byte[]&nbsp;value)</pre>
+<div class="block">Write a new value to a GATT characteristic. The result of the write operation is reported
+ by <a href="../../../com/bose/blecore/Service.html#onCharacteristicWriteSuccess-java.util.UUID-java.util.UUID-byte:A-"><code>onCharacteristicWriteSuccess(UUID, UUID, byte[])</code></a> instance method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - The GATT service UUID</dd>
+<dd><code>characteristic</code> - The GATT characteristic UUID</dd>
+<dd><code>value</code> - The value to write</dd>
+</dl>
+</li>
+</ul>
+<a name="listen-java.util.UUID-boolean-com.google.android.gms.tasks.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>listen</h4>
+<pre>protected&nbsp;com.google.android.gms.tasks.Task&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Boolean.html" target="_top" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;listen(@NonNull
+                                                            <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristicToListen,
+                                                            boolean&nbsp;enabled,
+                                                            @NonNull
+                                                            com.google.android.gms.tasks.CancellationToken&nbsp;cancellationToken)</pre>
+<div class="block">Start or stop listening for GATT characteristic changes (notifications). The changes are
+ reported by <a href="../../../com/bose/blecore/Service.html#onCharacteristicChanged-java.util.UUID-java.util.UUID-byte:A-"><code>onCharacteristicChanged(UUID, UUID, byte[])</code></a> instance method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>characteristicToListen</code> - The GATT characteristic to listen</dd>
+<dd><code>enabled</code> - <code>true</code> to enable listener, <code>false</code> to disable</dd>
+<dd><code>cancellationToken</code> - cancellation token</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Task to indicate when the operation completes</dd>
+</dl>
+</li>
+</ul>
+<a name="listen-java.util.Collection-boolean-com.google.android.gms.tasks.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>listen</h4>
+<pre>protected&nbsp;com.google.android.gms.tasks.Task&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/List.html" target="_top" title="class or interface in java.util">List</a>&lt;com.google.android.gms.tasks.Task&lt;?&gt;&gt;&gt;&nbsp;listen(@NonNull
+                                                                                               <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/Collection.html" target="_top" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&gt;&nbsp;characteristics,
+                                                                                               boolean&nbsp;enable,
+                                                                                               @NonNull
+                                                                                               com.google.android.gms.tasks.CancellationToken&nbsp;cancellationToken)</pre>
+</li>
+</ul>
+<a name="onCharacteristicReadSuccess-java.util.UUID-java.util.UUID-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCharacteristicReadSuccess</h4>
+<pre>protected&nbsp;void&nbsp;onCharacteristicReadSuccess(@NonNull
+                                           <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                                           @NonNull
+                                           <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                                           @Nullable
+                                           byte[]&nbsp;data)</pre>
+<div class="block">Callback to notify about successful completion of <a href="../../../com/bose/blecore/Service.html#requestData-java.util.UUID-"><code>requestData(UUID)</code></a> operation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - The GATT service of the characteristic</dd>
+<dd><code>characteristic</code> - The GATT characteristic that was read</dd>
+<dd><code>data</code> - The read data</dd>
+</dl>
+</li>
+</ul>
+<a name="onCharacteristicReadFailure-java.util.UUID-java.util.UUID-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCharacteristicReadFailure</h4>
+<pre>protected&nbsp;void&nbsp;onCharacteristicReadFailure(@NonNull
+                                           <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                                           @NonNull
+                                           <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                                           int&nbsp;status)</pre>
+<div class="block">Callback to notify about failed completion of <a href="../../../com/bose/blecore/Service.html#requestData-java.util.UUID-"><code>requestData(UUID)</code></a> operation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - The GATT service of the characteristic</dd>
+<dd><code>characteristic</code> - The GATT characteristic that was read</dd>
+<dd><code>status</code> - The failure reason</dd>
+</dl>
+</li>
+</ul>
+<a name="onCharacteristicWriteSuccess-java.util.UUID-java.util.UUID-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCharacteristicWriteSuccess</h4>
+<pre>protected&nbsp;void&nbsp;onCharacteristicWriteSuccess(@NonNull
+                                            <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                                            @NonNull
+                                            <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                                            @Nullable
+                                            byte[]&nbsp;data)</pre>
+<div class="block">Callback to notify about successful completion of <a href="../../../com/bose/blecore/Service.html#writeValue-java.util.UUID-java.util.UUID-byte:A-"><code>writeValue(UUID, UUID, byte[])</code></a>
+ operation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - The GATT service of the characteristic</dd>
+<dd><code>characteristic</code> - The GATT characteristic that was written to</dd>
+<dd><code>data</code> - The written data</dd>
+</dl>
+</li>
+</ul>
+<a name="onCharacteristicWriteFailure-java.util.UUID-java.util.UUID-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCharacteristicWriteFailure</h4>
+<pre>protected&nbsp;void&nbsp;onCharacteristicWriteFailure(@NonNull
+                                            <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                                            @NonNull
+                                            <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                                            int&nbsp;status)</pre>
+<div class="block">Callback to notify about failed completion of <a href="../../../com/bose/blecore/Service.html#writeValue-java.util.UUID-java.util.UUID-byte:A-"><code>writeValue(UUID, UUID, byte[])</code></a> operation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - The GATT service of the characteristic</dd>
+<dd><code>characteristic</code> - The GATT characteristic that was written to</dd>
+<dd><code>status</code> - The failure reason</dd>
+</dl>
+</li>
+</ul>
+<a name="onCharacteristicChanged-java.util.UUID-java.util.UUID-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCharacteristicChanged</h4>
+<pre>protected&nbsp;void&nbsp;onCharacteristicChanged(@NonNull
+                                       <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                                       @NonNull
+                                       <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                                       @Nullable
+                                       byte[]&nbsp;data)</pre>
+<div class="block">Callback to notify about a remote characteristic change that was enabled with
+ <a href="../../../com/bose/blecore/Service.html#listen-java.util.UUID-boolean-com.google.android.gms.tasks.CancellationToken-"><code>listen(UUID, boolean, CancellationToken)</code></a> call.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - The GATT service of the characteristic</dd>
+<dd><code>characteristic</code> - The GATT characteristic that changed</dd>
+<dd><code>data</code> - The updated data</dd>
+</dl>
+</li>
+</ul>
+<a name="onDescriptorWriteSuccess-java.util.UUID-java.util.UUID-java.util.UUID-byte:A-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onDescriptorWriteSuccess</h4>
+<pre>protected&nbsp;void&nbsp;onDescriptorWriteSuccess(@NonNull
+                                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                                        @NonNull
+                                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                                        @NonNull
+                                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;descriptor,
+                                        @Nullable
+                                        byte[]&nbsp;characteristicData,
+                                        @Nullable
+                                        byte[]&nbsp;descriptorData)</pre>
+</li>
+</ul>
+<a name="onDescriptorWriteFailure-java.util.UUID-java.util.UUID-java.util.UUID-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onDescriptorWriteFailure</h4>
+<pre>protected&nbsp;void&nbsp;onDescriptorWriteFailure(@NonNull
+                                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;service,
+                                        @NonNull
+                                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;characteristic,
+                                        @NonNull
+                                        <a href="https://docs.oracle.com/javase/7/docs/api/index.html?java/util/UUID.html" target="_top" title="class or interface in java.util">UUID</a>&nbsp;descriptor,
+                                        int&nbsp;status)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-all.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/bose/blecore/SerializedGatt.html" title="class in com.bose.blecore"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../com/bose/blecore/ServiceIdentification.html" title="interface in com.bose.blecore"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/bose/blecore/Service.html" target="_top">Frames</a></li>
+<li><a href="Service.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>
